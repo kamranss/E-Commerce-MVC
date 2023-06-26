@@ -1,49 +1,67 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Allup</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Allup.styles.css" asp-append-version="true" />
+    <meta charset="utf-8">
+
+    <!--====== Title ======-->
+@*    <title>Allup - Electronics Responsive eCommerce HTML Template.</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">*@
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="~/assets/images/favicon.png" type="image/png">
+
+
+    <!-- CSS
+    ============================================ -->
+    <!--===== Vendor CSS (Bootstrap & Icon Font) =====-->
+
+    <link rel="stylesheet" href="~/assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/css/plugins/ionicons.min.css">
+    <link rel="stylesheet" href="~/assets/css/plugins/fontawesome.min.css">
+
+    <!--===== Plugins CSS (All Plugins Files) =====-->
+
+    <link rel="stylesheet" href="~/assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="~/assets/css/plugins/animate.css">
+    <link rel="stylesheet" href="~/assets/css/plugins/jquery-ui.min.css">
+    <link rel="stylesheet" href="~/assets/css/plugins/default.css">
+
+    <!--====== Main Style CSS ======-->
+    <link rel="stylesheet" href="~/assets/css/style.css">
+
+
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+    <!-- <link rel="stylesheet" href="~/assets/css/vendor/plugins.min.css">
+    <link rel="stylesheet" href="~/assets/css/style.min.css"> -->
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Allup</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+   
+    @await Component.InvokeAsync("Header");
+   
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - Allup - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    @await Component.InvokeAsync("Footer");
+    <script src="~/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="~/assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+    <!--====== Plugins js ======-->
+    <script src="~/assets/js/plugins/popper.min.js"></script>
+    <script src="~/assets/js/plugins/bootstrap.min.js"></script>
+    <script src="~/assets/js/plugins/slick.min.js"></script>
+    <script src="~/assets/js/plugins/jquery.countdown.min.js"></script>
+    <script src="~/assets/js/plugins/jquery-ui.min.js"></script>
+
+
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+    <!-- <script src="~/assets/js/plugins.min.js"></script> -->
+    <!--====== Main Activation js ======-->
+    <script src="~/assets/js/main.js"></script>
+
+
 </body>
 </html>
