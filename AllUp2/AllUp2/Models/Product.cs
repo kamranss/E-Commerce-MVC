@@ -6,6 +6,19 @@
         public string Name { get; set; }
         public double Price { get; set; }
         public int Count { get; set; }
+        public string ProductCode { get; set; }
+        public bool IStock { get; set; }
+        public string Description { get; set; }
+        public int Quantity { get; set; }
+        public int BrandId { get; set; }
+        public Brand Brand { get; set; }
+        public int ColorId { get; set; }
+        public Color Color { get; set; }
+        public int CompositionId { get; set; }
+        public Composition Composition { get; set; }
+        public int SizeId { get; set; }
+        public Size Size { get; set; }
+       
         public int CategoryId { get; set; }
         public Category Category { get; set; }
         public List<Image> Images { get; set; }
