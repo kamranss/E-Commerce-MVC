@@ -1,8 +1,14 @@
-var builder = WebApplication.CreateBuilder(args);
+using AllUp2;
+using Microsoft.EntityFrameworkCore;
 
+var builder = WebApplication.CreateBuilder(args);
 var config = builder.Configuration;
+
+builder.Services.ServicesRegister();
+
+
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+//builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
@@ -19,7 +25,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthentication();
+//app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

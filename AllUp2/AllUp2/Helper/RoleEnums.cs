@@ -1,6 +1,10 @@
 ﻿namespace AllUp2.Helper
 {
-    public class RoleEnums
+    public enum RoleEnums
     {
+        SuperAdmin,
+        Admin,
+        Member
     }
 }
+

@@ -4,11 +4,13 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public double Price { get; set; }
+        public decimal Price { get; set; }
+        public decimal DiscountPrice { get; set; }
         public int Count { get; set; }
         public string ProductCode { get; set; }
         public bool IStock { get; set; }
         public string Description { get; set; }
+        public int Rate { get; set; }
         public int Quantity { get; set; }
         public int BrandId { get; set; }
         public Brand Brand { get; set; }
