@@ -5,6 +5,762 @@
       "PackagePath": "staticwebassets\\AllUp2.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\css\\layout-dark.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\layout-dark.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\css\\layout-rtl.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\layout-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\css\\plugins\\animate.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\plugins\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\css\\plugins\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\plugins\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\css\\plugins\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\plugins\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\css\\plugins\\prism-coy.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\plugins\\prism-coy.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Flaticon.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\feather.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\feather.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\feather.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\feather.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\feather.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\feather.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\feather.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\feather.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOUehpOqc.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOUehpOqc.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOVuhpOqc.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOVuhpOqc.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOX-hpOqc.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOX-hpOqc.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOXOhpOqc.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOXOhpOqc.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOXehpOqc.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOXehpOqc.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOXuhpOqc.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\opensans\\mem5YaGs126MiZpBA-UNirkOXuhpOqc.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFUZ0bbck.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFUZ0bbck.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFVZ0b.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFVZ0b.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFVp0bbck.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFVp0bbck.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFW50bbck.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFW50bbck.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFWJ0bbck.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFWJ0bbck.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFWZ0bbck.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFWZ0bbck.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFWp0bbck.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\opensans\\mem8YaGs126MiZpBA-UFWp0bbck.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\pct.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\pct.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\pct.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\pct.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\pct.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\pct.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\fonts\\pct.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\pct.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\auth\\auth-logo-dark.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\auth\\auth-logo-dark.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\auth\\auth-logo.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\auth\\auth-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\auth\\img-auth-big.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\auth\\img-auth-big.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\browser\\chrome.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\browser\\chrome.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\browser\\firefox.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\browser\\firefox.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\browser\\ie.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\browser\\ie.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\browser\\opera.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\browser\\opera.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\browser\\safari.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\browser\\safari.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\cd-arrow.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\cd-arrow.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\close.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\close.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\complete.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\complete.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\gallery-grid\\img-grd-gal-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gallery-grid\\img-grd-gal-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\gallery-grid\\img-grd-gal-2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gallery-grid\\img-grd-gal-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\gallery-grid\\img-grd-gal-3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gallery-grid\\img-grd-gal-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\gallery-grid\\img-grd-gal-4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gallery-grid\\img-grd-gal-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\gallery-grid\\img-grd-gal-5.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gallery-grid\\img-grd-gal-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\gallery-grid\\img-grd-gal-6.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gallery-grid\\img-grd-gal-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\gallery-grid\\masonry-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gallery-grid\\masonry-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\gallery-grid\\masonry-2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gallery-grid\\masonry-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\gallery-grid\\masonry-3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gallery-grid\\masonry-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\gallery-grid\\masonry-4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gallery-grid\\masonry-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\gallery-grid\\masonry-5.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gallery-grid\\masonry-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\gallery-grid\\masonry-6.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gallery-grid\\masonry-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\gallery-grid\\masonry-7.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gallery-grid\\masonry-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\gallery-grid\\masonry-8.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gallery-grid\\masonry-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\hover-effect\\triangle.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\hover-effect\\triangle.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\hover-effect\\triangle2.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\hover-effect\\triangle2.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\l1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\l1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\l2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\l2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\l3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\l3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\l4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\l4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\l5.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\l5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\l6.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\l6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\mixin.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\mixin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\sl1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\sl1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\sl2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\sl2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\sl3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\sl3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\sl4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\sl4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\sl5.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\sl5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\sl6.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\sl6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\smixin.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\smixin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\v1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\v1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\v2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\v2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\v3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\v3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\light-box\\v4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\light-box\\v4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\logo-dark.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\logo-dark.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\logo-docs.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\logo-docs.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\logo-icon.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\logo-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\logo-old.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\logo-old.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\logo-thumb.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\logo-thumb.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\maintance\\404.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\maintance\\404.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\maintance\\maintance.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\maintance\\maintance.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\maintance\\sark.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\maintance\\sark.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\maintance\\ship.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\maintance\\ship.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\maintance\\sparcle-1.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\maintance\\sparcle-1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\maintance\\sparcle-2.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\maintance\\sparcle-2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\next.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\next.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\prev.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\prev.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\product\\prod-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\prod-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\profile\\bg-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\profile\\bg-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\profile\\bg-2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\profile\\bg-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\profile\\bg-3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\profile\\bg-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\profile\\bg-4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\profile\\bg-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\profile\\cover.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\profile\\cover.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\slider\\img-slide-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slider\\img-slide-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\slider\\img-slide-2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slider\\img-slide-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\slider\\img-slide-3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slider\\img-slide-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\slider\\img-slide-4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slider\\img-slide-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\slider\\img-slide-5.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slider\\img-slide-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\slider\\img-slide-6.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slider\\img-slide-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\slider\\img-slide-7.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slider\\img-slide-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\ticket\\p1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\ticket\\p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\ticket\\p2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\ticket\\p2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\ticket\\p3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\ticket\\p3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\ticket\\p4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\ticket\\p4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\ticket\\p5.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\ticket\\p5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\user\\avatar-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\user\\avatar-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\user\\avatar-2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\user\\avatar-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\user\\avatar-3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\user\\avatar-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\user\\avatar-4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\user\\avatar-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\user\\avatar-5.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\user\\avatar-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\user\\cover.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\user\\cover.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\user\\img-avatar-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\user\\img-avatar-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\user\\img-avatar-2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\user\\img-avatar-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\user\\img-avatar-3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\user\\img-avatar-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\AUSTRALIA.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\AUSTRALIA.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\BRAZIL.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\BRAZIL.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\GERMANY.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\GERMANY.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\PHONE1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\PHONE1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\PHONE2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\PHONE2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\PHONE3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\PHONE3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\PHONE4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\PHONE4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\UK.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\UK.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\USA.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\USA.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\blur-bg.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\blur-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\dashborad-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\dashborad-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\dashborad-2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\dashborad-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\dashborad-3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\dashborad-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\dashborad-4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\dashborad-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\dashborad-5.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\dashborad-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\emoticon.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\emoticon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\img-round1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\img-round1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\p1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\p2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\p2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\p3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\p3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\p4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\p4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\profile-person1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\profile-person1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\slider5.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\slider5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\slider6.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\slider6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\slider7.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\slider7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\user-blur-bg.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\user-blur-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\wather2bottom.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\wather2bottom.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\watherbottom.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\watherbottom.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\wathernature.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\wathernature.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\watherstar1.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\watherstar1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\images\\widget\\watherstar2.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\widget\\watherstar2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\analytics.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\analytics.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\analytics.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\analytics.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\horizontal-menu.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\horizontal-menu.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\pages\\chart-apex.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\chart-apex.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\pages\\dashboard-main.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\dashboard-main.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\pages\\google-maps.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\google-maps.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\pcoded.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\pcoded.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\pcoded.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\pcoded.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\plugins\\apexcharts.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\plugins\\apexcharts.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\plugins\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\plugins\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\plugins\\gmaps.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\plugins\\gmaps.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\plugins\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\plugins\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\plugins\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\plugins\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\plugins\\prism.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\plugins\\prism.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\uikit.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\uikit.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\uikit.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\uikit.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\vendor-all.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\vendor-all.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\js\\vendor-all.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\vendor-all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\json\\2500.txt",
+      "PackagePath": "staticwebassets\\admin\\assets\\json\\2500.txt"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\json\\cities.json",
+      "PackagePath": "staticwebassets\\admin\\assets\\json\\cities.json"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\json\\citynames.json",
+      "PackagePath": "staticwebassets\\admin\\assets\\json\\citynames.json"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\admin\\assets\\json\\file-upload.php",
+      "PackagePath": "staticwebassets\\admin\\assets\\json\\file-upload.php"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\assets\\css\\plugins\\animate.css",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\animate.css"
     },

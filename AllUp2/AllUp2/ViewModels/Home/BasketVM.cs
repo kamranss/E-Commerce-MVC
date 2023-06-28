@@ -1,4 +1,4 @@
-﻿namespace AllUp2.ViewModels
+﻿namespace AllUp2.ViewModels.Home
 {
     public class BasketVM
     {

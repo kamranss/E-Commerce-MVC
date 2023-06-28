@@ -17,7 +17,7 @@ namespace AllUp2
             //services.AddMvc();
             services.AddMemoryCache();
 
-            services.AddScoped<IProductService, ProductService>(); // using this approach we are asking from Program class service that create instance for us from IProduct interface and return ProductService
+
             //services.AddScoped<Account>(s => new Account("random")); // creaitng instance from custom Class -- alsp here we are sending data to constructor
             ////Configuration of session and setting time for session lifespan
             //services.AddSession(option =>
@@ -46,9 +46,9 @@ namespace AllUp2
             //.AddDefaultTokenProviders() // this basicly serves for token generation
             //.AddErrorDescriber<CustomidentityErrorDescriber>(); // this is serving for get error descriptions which we indicated within helper 
             //services.AddSignalR();
-
-            services.AddScoped<IEmailService, EmailService>(); // injecting our service within IO container
-            services.AddScoped<IFileService, FileService>(); // injecting our service within IO container
+            //services.AddScoped<IProductService, ProductService>(); // using this approach we are asking from Program class service that create instance for us from IProduct interface and return ProductService
+            //services.AddScoped<IEmailService, EmailService>(); // injecting our service within IO container
+            //services.AddScoped<IFileService, FileService>(); // injecting our service within IO container
 
         }
     }

@@ -22,4 +22,12 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.14" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\AdminArea\Data\" />
+    <Folder Include="Areas\AdminArea\Models\" />
+    <Folder Include="ViewModels\AdminVM\Category\" />
+    <Folder Include="ViewModels\AdminVM\Slider\" />
+    <Folder Include="ViewModels\AdminVM\Product\" />
+  </ItemGroup>
+
 </Project>

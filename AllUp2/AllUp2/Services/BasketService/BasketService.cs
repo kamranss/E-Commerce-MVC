@@ -1,4 +1,5 @@
 ﻿using AllUp2.ViewModels;
+using AllUp2.ViewModels.Home;
 using Newtonsoft.Json;
 
 namespace AllUp2.Services.BasketService
