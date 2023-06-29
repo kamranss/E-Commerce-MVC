@@ -36,33 +36,49 @@
 
     <!--====== Main Style CSS ======-->
     <link rel="stylesheet" href="~/assets/css/style.css">
-
 </head>
 <body>
-    <section class="login-area pt-10">
+    <section class="register-area pt-10">
         <div class="container-fluid custom-container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="login-register-wrapper mt-30">
-                        <h4 class="allup-title">Login to Your Account</h4>
+                        <h4 class="allup-title">Creat New Account</h4>
+                        <p class="mt-10">Already have an account? <a href="login.html">Log in instead!</a></p>
+
                         <form action="#">
                             <div class="single-form">
-                                <input type="text" placeholder="Username or email *">
+                                <input type="text" placeholder="First Name">
+                            </div>
+                            <div class="single-form">
+                                <input type="text" placeholder="Last Name">
+                            </div>
+                            <div class="single-form">
+                                <input type="email" placeholder="Email Address">
+                            </div>
+                            <div class="single-form">
+                                <input type="text" placeholder="Username">
                             </div>
                             <div class="single-form">
                                 <input type="password" placeholder="Password">
                             </div>
+                            <div class="single-form">
+                                <input type="password" placeholder="Confirm Password">
+                            </div>
                             <div class="custom-checkbox mt-30">
-                                <input type="checkbox" id="account">
-                                <label for="account"></label>
-                                <p>Remember me</p>
+                                <input type="checkbox" id="account-1">
+                                <label for="account-1"></label>
+                                <p>Receive Offers From Our Partners</p>
+                            </div>
+                            <div class="custom-checkbox mt-30">
+                                <input type="checkbox" id="account-2">
+                                <label for="account-2"></label>
+                                <p>Sign Up For Our Newsletter <br> Subscribe To Our Newsletters Now And Stay Up-To-Date With New Collections, The Latest Lookbooks And Exclusive Offers..</p>
                             </div>
                             <div class="single-form">
-                                <button class="main-btn main-btn-2">Login</button>
+                                <button class="main-btn main-btn-2">Register</button>
                             </div>
                         </form>
-                        <p class="mt-20"><a href="#">Lost your password?</a></p>
-                        <p class="mt-10">No account? <a href="register.html">Create one here.</a></p>
                     </div>
                 </div>
             </div>
