@@ -25,6 +25,10 @@
   <ItemGroup>
     <Folder Include="Areas\AdminArea\Data\" />
     <Folder Include="Areas\AdminArea\Models\" />
+    <Folder Include="Areas\AdminArea\Services\SliderService\" />
+    <Folder Include="Areas\AdminArea\Services\RoleService\" />
+    <Folder Include="Areas\AdminArea\Services\UserService\" />
+    <Folder Include="Areas\AdminArea\Services\ProductService\" />
     <Folder Include="ViewModels\AdminVM\Category\" />
     <Folder Include="ViewModels\AdminVM\Slider\" />
     <Folder Include="ViewModels\AdminVM\Product\" />

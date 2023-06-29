@@ -38,7 +38,11 @@ namespace AllUp2.DAL
                PasswordHash = new PasswordHasher<AppUser>().HashPassword(null, "Admin12345!")
 
            }
-             );
+         );
+            modelBuilder.Entity<Category>()
+            .HasMany(c => c.SubCategories)
+            .WithOne(c => c.ParentCategory)
+            .HasForeignKey(c => c.ParentCategoryId);
             //base.OnModelCreating(modelBuilder);
         }
 

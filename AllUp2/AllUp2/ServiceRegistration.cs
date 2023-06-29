@@ -3,6 +3,7 @@ using AllUp2.Helper;
 using AllUp2.Models;
 using AllUp2.Services.EmailService;
 using AllUp2.Services.FileService;
+using AllUp2.Services.OTPService;
 using AllUp2.Services.ProductService;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Principal;
@@ -47,8 +48,9 @@ namespace AllUp2
             //.AddErrorDescriber<CustomidentityErrorDescriber>(); // this is serving for get error descriptions which we indicated within helper 
             //services.AddSignalR();
             //services.AddScoped<IProductService, ProductService>(); // using this approach we are asking from Program class service that create instance for us from IProduct interface and return ProductService
-            //services.AddScoped<IEmailService, EmailService>(); // injecting our service within IO container
-            //services.AddScoped<IFileService, FileService>(); // injecting our service within IO container
+            services.AddScoped<IEmailService, EmailService>(); // injecting our service within IO container
+            services.AddScoped<IFileService, FileService>(); // injecting our service within IO container
+            //services.AddScoped<OtpService>(); // generate otp service
 
         }
     }
