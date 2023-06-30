@@ -1,6 +1,7 @@
 ﻿using AllUp2.DAL;
 using AllUp2.Helper;
 using AllUp2.Models;
+using AllUp2.Services.BasketS;
 using AllUp2.Services.EmailService;
 using AllUp2.Services.FileService;
 using AllUp2.Services.Home;
@@ -52,6 +53,7 @@ namespace AllUp2
             services.AddScoped<IProductService, ProductService>(); // using this approach we are asking from Program class service that create instance for us from IProduct interface and return ProductService
             services.AddScoped<IEmailService, EmailService>(); // injecting our service within IO container
             services.AddScoped<IFileService, FileService>(); // injecting our service within IO container
+            services.AddScoped<IBasketService, BasketService>();
             //services.AddScoped<OtpService>(); // generate otp service
 
         }
