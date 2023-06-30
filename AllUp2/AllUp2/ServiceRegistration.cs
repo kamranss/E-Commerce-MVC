@@ -3,8 +3,9 @@ using AllUp2.Helper;
 using AllUp2.Models;
 using AllUp2.Services.EmailService;
 using AllUp2.Services.FileService;
+using AllUp2.Services.Home;
 using AllUp2.Services.OTPService;
-using AllUp2.Services.ProductService;
+using AllUp2.Services.ProductS;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Principal;
 
@@ -19,8 +20,8 @@ namespace AllUp2
             services.AddMemoryCache();
 
 
-            //services.AddScoped<Account>(s => new Account("random")); // creaitng instance from custom Class -- alsp here we are sending data to constructor
-            ////Configuration of session and setting time for session lifespan
+           /* services.AddScoped<Account>(s => new Account("random"));*/ // creaitng instance from custom Class -- alsp here we are sending data to constructor
+            //Configuration of session and setting time for session lifespan
             //services.AddSession(option =>
             //{
             //    option.IdleTimeout = TimeSpan.FromMinutes(10);
@@ -47,7 +48,8 @@ namespace AllUp2
             //.AddDefaultTokenProviders() // this basicly serves for token generation
             //.AddErrorDescriber<CustomidentityErrorDescriber>(); // this is serving for get error descriptions which we indicated within helper 
             //services.AddSignalR();
-            //services.AddScoped<IProductService, ProductService>(); // using this approach we are asking from Program class service that create instance for us from IProduct interface and return ProductService
+            services.AddScoped<IHomeService, HomeService>();
+            services.AddScoped<IProductService, ProductService>(); // using this approach we are asking from Program class service that create instance for us from IProduct interface and return ProductService
             services.AddScoped<IEmailService, EmailService>(); // injecting our service within IO container
             services.AddScoped<IFileService, FileService>(); // injecting our service within IO container
             //services.AddScoped<OtpService>(); // generate otp service

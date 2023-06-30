@@ -1,10 +1,6 @@
 ﻿namespace AllUp2.Services.ProductS
 {
-    public class ProductService : IProductService
+    public class ProductService
     {
-        public int Sum(int x, int y)
-        {
-           return x + y;
-        }
     }
 }
