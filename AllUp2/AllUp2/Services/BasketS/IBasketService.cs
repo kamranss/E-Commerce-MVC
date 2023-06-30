@@ -8,10 +8,10 @@ namespace AllUp2.Services.BasketS
         int BasketCount();
         List<BasketVM> ShowBAsket(string basket);
         Product GetProduct(int? id);
-        List<BasketVM> CheckBasketProduct(string basket, Product product);
+        List<BasketVM> AddProductToBasketList(string basket, Product product);
         string GetBasket();
         void RemoveProductFromBasket(int? id, string basket);
-        void AddProductToBasket(Product products);
-        void IncDecProductFromBasket(int? id, int count);
+        void AppendListToBasket(List<BasketVM> products);
+        void IncDecProductFromBasket(int? id, int count, string basket);
     }
 }
