@@ -4,6 +4,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace AllUp2.Areas.AdminArea.Controllers
 {
+    [Area("AdminArea")]
     public class CategoryController : Controller
     {
         private AppDbContext _appDbContext;

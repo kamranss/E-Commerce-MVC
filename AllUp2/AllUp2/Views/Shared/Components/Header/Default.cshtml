@@ -28,7 +28,7 @@
                     <div class="header-menu-nav">
                         <ul class="menu-nav">
                             <li><a href="compare.html"><i class="fal fa-repeat"></i> Compare (0)</a></li>
-                            <li><a href="wishlist.html"><i class="fal fa-heart"></i> Wishlist(0)</a></li>
+                            <li><a asp-controller="basket" asp-action="showbasket"><i class="fal fa-heart"></i> Wishlist(0)</a></li>
                             <li>
                                 <div class="dropdown">
                                     <button type="button" id="setting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Setting <i class="icon ion-chevron-down"></i></button>
@@ -201,7 +201,7 @@
                             </div>
                             <div class="header-cart">
                                 <div class="cart-btn">
-                                    <a asp-controller="basket" asp-action="showbasket">x    
+                                    <a asp-controller="basket" asp-action="showbasket">    
                                         <i class="icon ion-bag"></i>
                                         <span class="text">Cart :</span>
                                         <span class="total">$0.00</span>

@@ -1,4 +1,5 @@
-﻿using AllUp2.DAL;
+﻿using AllUp2.Areas.AdminArea.Services.ProductS;
+using AllUp2.DAL;
 using AllUp2.Helper;
 using AllUp2.Models;
 using AllUp2.Services.BasketS;
@@ -54,6 +55,7 @@ namespace AllUp2
             services.AddScoped<IEmailService, EmailService>(); // injecting our service within IO container
             services.AddScoped<IFileService, FileService>(); // injecting our service within IO container
             services.AddScoped<IBasketService, BasketService>();
+            services.AddScoped<IProService, ProService>();
             //services.AddScoped<OtpService>(); // generate otp service
 
         }

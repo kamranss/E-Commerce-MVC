@@ -1,6 +1,6 @@
-﻿namespace AllUp2.Helper.FileService
+﻿namespace AllUp2.Helper.FileExten
 {
-    public static class FileService
+    public static class FileExtension
     {
         public static bool CheckFileType(this IFormFile file)
         {

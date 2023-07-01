@@ -1,7 +1,94 @@
-﻿
+﻿@model List<BasketVM>
 @{
     ViewData["Title"] = "ShowBasket";
+    double totalPrice = Model.Sum(p => p.BasketCount * p.Price);
 }
 
-<h1>ShowBasket</h1>
+@*The data still not dynamic*@
+<section class="wishlist-page pt-10">
+    <div class="container-fluid custom-container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="wishlist mt-30">
+                    <div class="shopping-cart-table table-responsive">
+                        @if (Model.Count >0)
+                        {
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="image">Image</th>
+                                        <th class="product">Name</th>
+                                        <th class="product">Product</th>
+                                        <th class="price">Price</th>
+                                        <th class="quantity">Quantity</th>
+                                        <th class="total">Total</th>
+                                        <th class="delete">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <div class="product-image">
+                                                    <img src="~/images/product/img/@item.ImageUrl" width="150" height="150" alt="cart">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="product-title">
+                                                    <h4 class="title"><a href="single-product.html">@item.Name</a></h4>
+                                            </td>
+                                            <td>
+                                                <div class="product-title">
+                                                    <h4 class="title"><a href="single-product.html">@item.Description</a></h4> @*New Balance Fresh Foam LAZR v1 Sport eu accumsan massa facilisis*@
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="product-price">
+                                                    <span class="price">€@item.Price</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="product-quantity">
+                                                    <div class="quantity mt-15 d-flex">
+
+                                                        <a class="sub" asp-controller="Basket" asp-action="MinusPlusProductCount" asp-route-id="@item.Id" asp-route-count="@(item.BasketCount - 1)"><i class="fal fa-minus"></i></a>
+                                                        @item.BasketCount
+                                                        <a class="add" asp-controller="Basket" asp-action="MinusPlusProductCount" asp-route-id="@item.Id" asp-route-count="@(item.BasketCount + 1)"><i class="fal fa-plus"></i></a>
+                                           @*             <button type="button" class="sub"><i class="fal fa-minus"></i></button>
+                                                        <input type="text" value="1" />
+                                                        <button type="button" class="add"><i class="fal fa-plus"></i></button>*@
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="product-total">
+                                                    <span class="total-amount">€18.90</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="product-delete">
+                                                    <a asp-controller="basket" asp-action="removeproduct" asp-route-id="@item.Id">
+                                                        <i class="fal fa-trash-alt"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+                        }
+                        else
+                        {
+                            <a asp-controller="home" action="index">Go to home </a>
+                        }
+                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
