@@ -27,8 +27,8 @@ namespace AllUp2.Controllers
             var product = _basketService.GetProduct(id);
             if (product == null) return NotFound();
             string basket = _basketService.GetBasket();
-            var products = _basketService.CheckBasketProduct(basket, product);
-            _basketService.AddProductToBasket(product);
+            var products = _basketService.AddProductToBasketList(basket, product);
+            _basketService.AppendListToBasket(products);
             return RedirectToAction("Index", "Home");
         }
 
@@ -37,6 +37,28 @@ namespace AllUp2.Controllers
             string basket = _basketService.GetBasket();
             var products = _basketService.ShowBAsket(basket);
             return Json(products);
+        }
+
+        public IActionResult RemoveProduct(int? id)
+        {
+            if (id == null) return NotFound();
+
+            string basket = _basketService.GetBasket();
+
+            _basketService.RemoveProductFromBasket(id, basket);
+
+            return RedirectToAction("ShowBasket");
+        }
+
+        public IActionResult MinusPlusProductCount(int? id, int count)
+        {
+            if (id == null) return NotFound();
+
+            string basket = _basketService.GetBasket();
+
+            _basketService.IncDecProductFromBasket(id, count, basket);
+
+            return RedirectToAction("ShowBasket");
         }
     }
 }

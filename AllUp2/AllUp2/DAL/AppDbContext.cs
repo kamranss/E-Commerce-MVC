@@ -24,6 +24,7 @@ namespace AllUp2.DAL
         public DbSet<Expert> Experts { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<Post> Posts { get; set; }
+        public DbSet<Banner> Banners { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Size> Sizes { get; set; }
         public DbSet<Color> Colors { get; set; }

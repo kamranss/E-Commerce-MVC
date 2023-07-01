@@ -1,4 +1,4 @@
-﻿
+﻿@model RegisterVM
 @{
     Layout = null;
 }
@@ -45,39 +45,43 @@
                     <div class="login-register-wrapper mt-30">
                         <h4 class="allup-title">Creat New Account</h4>
                         <p class="mt-10">Already have an account? <a href="login.html">Log in instead!</a></p>
-
+                        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
                         <form action="#">
-                            <div class="single-form">
-                                <input type="text" placeholder="First Name">
+                            <div class="form-group">
+                                <input asp-for="FullName" class="form-control form-control-lg" placeholder="FullName">
+                                <span asp-validation-for="FullName" class="text-danger"></span>
                             </div>
-                            <div class="single-form">
-                                <input type="text" placeholder="Last Name">
+                            <div class="form-group">
+                                <input asp-for="UserName" class="form-control form-control-lg" placeholder="Username">
+                                <span asp-validation-for="UserName" class="text-danger"></span>
                             </div>
-                            <div class="single-form">
-                                <input type="email" placeholder="Email Address">
+                            <div class="form-group">
+                                <input asp-for="Email" class="form-control form-control-lg" placeholder="Email">
+                                <span asp-validation-for="Email" class="text-danger"></span>
                             </div>
-                            <div class="single-form">
-                                <input type="text" placeholder="Username">
+                            <div class="form-group">
+                                <input asp-for="Password" class="form-control form-control-lg" placeholder="Password">
+                                <span asp-validation-for="Password" class="text-danger"></span>
                             </div>
-                            <div class="single-form">
-                                <input type="password" placeholder="Password">
+                            <div class="form-group">
+                                <input asp-for="ConfirmPassword" class="form-control form-control-lg" placeholder="Confirm Password">
+                                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                             </div>
-                            <div class="single-form">
-                                <input type="password" placeholder="Confirm Password">
+                            
+                            <div class="mt-3">
+                                <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN UP</button>
                             </div>
-                            <div class="custom-checkbox mt-30">
-                                <input type="checkbox" id="account-1">
-                                <label for="account-1"></label>
-                                <p>Receive Offers From Our Partners</p>
+                            <div class="text-center mt-4 font-weight-light">
+                                Already have an account? <a asp-action="login" class="text-primary">Login</a>
                             </div>
-                            <div class="custom-checkbox mt-30">
+                           @* <div class="custom-checkbox mt-30">
                                 <input type="checkbox" id="account-2">
                                 <label for="account-2"></label>
                                 <p>Sign Up For Our Newsletter <br> Subscribe To Our Newsletters Now And Stay Up-To-Date With New Collections, The Latest Lookbooks And Exclusive Offers..</p>
                             </div>
                             <div class="single-form">
                                 <button class="main-btn main-btn-2">Register</button>
-                            </div>
+                            </div>*@
                         </form>
                     </div>
                 </div>
@@ -94,10 +98,8 @@
     <script src="~/assets/js/plugins/jquery.countdown.min.js"></script>
     <script src="~/assets/js/plugins/jquery-ui.min.js"></script>
 
-
-    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
-    <!-- <script src="~/assets/js/plugins.min.js"></script> -->
-    <!--====== Main Activation js ======-->
     <script src="~/assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js" integrity="sha512-EanukVTZc4W9tUCLnDl069Izidg49PcNRKO1upLzKt9ajq66i+bXOtlzXcIbRhb6vVEGF6BCc8wQi5T1ztCpTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

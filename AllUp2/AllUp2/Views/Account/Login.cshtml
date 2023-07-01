@@ -1,4 +1,4 @@
-﻿
+﻿@model LoginVM
 @{
     Layout = null;
 }
@@ -45,24 +45,30 @@
                 <div class="col-lg-6">
                     <div class="login-register-wrapper mt-30">
                         <h4 class="allup-title">Login to Your Account</h4>
+                        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
                         <form action="#">
                             <div class="single-form">
-                                <input type="text" placeholder="Username or email *">
+                                <input asp-for="UserNameOrEmail" class="form-control form-control-lg" placeholder="Username or Email">
+                                <span asp-validation-for="UserNameOrEmail" class="text-danger"></span>
                             </div>
                             <div class="single-form">
-                                <input type="password" placeholder="Password">
+                                <input asp-for="Password" class="form-control form-control-lg" placeholder="Password">
+                                <span asp-validation-for="Password" class="text-danger"></span>
                             </div>
                             <div class="custom-checkbox mt-30">
-                                <input type="checkbox" id="account">
-                                <label for="account"></label>
-                                <p>Remember me</p>
+                                <label class="form-check-label text-muted">
+                                    <input asp-for="RememberMe" class="form-check-input">
+                                    Keep me signed in
+                                </label>
                             </div>
                             <div class="single-form">
                                 <button class="main-btn main-btn-2">Login</button>
                             </div>
                         </form>
                         <p class="mt-20"><a href="#">Lost your password?</a></p>
-                        <p class="mt-10">No account? <a href="register.html">Create one here.</a></p>
+                        <div class="text-center mt-4 font-weight-light">
+                            Don't have an account? <a asp-action="Register" class="text-primary">Create</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,10 +84,8 @@
     <script src="~/assets/js/plugins/jquery.countdown.min.js"></script>
     <script src="~/assets/js/plugins/jquery-ui.min.js"></script>
 
-
-    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
-    <!-- <script src="~/assets/js/plugins.min.js"></script> -->
-    <!--====== Main Activation js ======-->
     <script src="~/assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js" integrity="sha512-EanukVTZc4W9tUCLnDl069Izidg49PcNRKO1upLzKt9ajq66i+bXOtlzXcIbRhb6vVEGF6BCc8wQi5T1ztCpTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
