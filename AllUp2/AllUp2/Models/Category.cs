@@ -7,6 +7,8 @@ namespace AllUp2.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public bool IsMain { get; set; }
+        public string ImageUrl { get; set; }
 
         //[ForeignKey(nameof(Category.Id))]
         public int? ParentCategoryId { get; set; }
