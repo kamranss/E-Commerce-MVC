@@ -1,4 +1,9 @@
-﻿@{
+﻿@model Bio
+@inject IBasketService basketservice
+@{
+    int basketCount = basketservice.BasketCount();
+}
+@{
     Layout = null;
 }
 
@@ -196,7 +201,7 @@
                             </div>
                             <div class="header-cart">
                                 <div class="cart-btn">
-                                    <a href="#">
+                                    <a asp-controller="basket" asp-action="showbasket">x    
                                         <i class="icon ion-bag"></i>
                                         <span class="text">Cart :</span>
                                         <span class="total">$0.00</span>
@@ -357,7 +362,8 @@
                         <div class="header-horizontal-menu">
                             <ul class="menu-content">
                                 <li class="active">
-                                    <a href="#">Home <i class="fal fa-chevron-down"></i></a>
+                                    <a asp-controller="Home" asp-action="index">Home <i class="fal fa-chevron-down"></i></a>
+                                  
                                     <ul class="sub-menu">
                                         <li><a href="index.html">Home 01</a></li>
                                         <li><a href="index-2.html">Home 02</a></li>
@@ -380,7 +386,8 @@
                                     </ul>
                                 </li>
                                 <li class="position-static">
-                                    <a href="#">Shop <i class="fal fa-chevron-down"></i></a>
+                                    <a asp-controller="product" asp-action="index">Shop <i class="fal fa-chevron-down"></i></a>
+                                  
                                     <ul class="mega-sub-menu d-flex flex-wrap">
                                         <li>
                                             <a class="menu-title" href="#">Shop Grid</a>
@@ -482,6 +489,26 @@
                                     </ul>
                                 </li>
                                 <li><a href="contact.html">Contact</a></li>
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <a class="nav-link" asp-area="AdminArea" asp-controller="Dashboard" asp-action="Index">AdminPanel</a>
+
+                                }
+                                </li>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <li class="nav-item">
+                                        <p><i class="fa-solid fa-user"></i>@ViewBag.UserFullName</p>
+
+                                        <a class="nav-link" asp-controller="Account" asp-action="Logout">Logout</a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li class="nav-item">
+                                        <a class="nav-link" asp-controller="Account" asp-action="Login">Login</a>
+                                    </li>
+                                }
                             </ul>
                         </div> <!-- header horizontal menu -->
                     </div>

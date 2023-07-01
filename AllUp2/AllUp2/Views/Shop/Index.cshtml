@@ -1,0 +1,56 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "Index";
+}
+@*The data still not dynamic*@
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+        <div class="row">
+          @foreach (var item in Model)
+            {
+                <div class="product-col col-md-4 col-sm-6">
+                    <div class="single-product mt-30">
+                        <div class="product-image">
+                            <a href="single-product.html">
+                                <img class="first-image" src="assets/images/product/product-3.jpg" alt="product">
+                                <img class="second-image" src="assets/images/product/product-4.jpg" alt="product">
+                            </a>
+                            <ul class="product-meta">
+                                <li><a href="#"><i class="icon ion-bag"></i></a></li>
+                                <li><a href="#"><i class="icon ion-android-favorite-outline"></i></a></li>
+                                <li><a href="#"><i class="icon ion-android-options"></i></a></li>
+                                <li><a data-toggle="modal" data-target="#productQuickModal" href="#"><i class="icon ion-android-open"></i></a></li>
+                            </ul>
+                            <span class="discount-product">-12%</span>
+                        </div>
+                        <div class="product-content">
+                            <h4 class="product-title"><a href="single-product.html">Cale 6 eu accumsan massa facilisis Madden by Steve</a></h4>
+                            <ul class="product-rating">
+                                <li class="rating-on"><i class="fas fa-star"></i></li>
+                                <li class="rating-on"><i class="fas fa-star"></i></li>
+                                <li class="rating-on"><i class="fas fa-star"></i></li>
+                                <li class="rating-on"><i class="fas fa-star"></i></li>
+                                <li class="rating-on"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <div class="product-price">
+                                <span class="regular-price">€24.90</span>
+                                <span class="price-sale">€21.90</span>
+                            </div>
+                        </div>
+                    </div> <!-- single product -->
+                </div>
+            }
+
+            <ul class="pagination justify-content-center mt-30">
+                <li><a href="#"><i class="fal fa-chevron-left"></i></a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#"><i class="fal fa-chevron-right"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div> <!-- row -->
+
+
+
