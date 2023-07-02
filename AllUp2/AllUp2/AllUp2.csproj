@@ -28,7 +28,6 @@
     <Folder Include="Areas\AdminArea\Services\SliderS\" />
     <Folder Include="Areas\AdminArea\Services\RoleS\" />
     <Folder Include="Areas\AdminArea\Services\UserS\" />
-    <Folder Include="ViewModels\AdminVM\Category\" />
     <Folder Include="ViewModels\AdminVM\Slider\" />
   </ItemGroup>
 

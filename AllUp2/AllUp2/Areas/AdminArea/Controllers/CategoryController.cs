@@ -55,11 +55,11 @@ namespace AllUp2.Areas.AdminArea.Controllers
             var category = _categoryService.FindCategory(id);
             if (category == null) return NotFound();
             return View(category);
-        }
+        }// done
         public IActionResult Create()
         {
             return View();
-        }
+        } // done
         [HttpPost]
         public IActionResult Create(CategoryCreateVM category) //string name, string description
         {
@@ -105,7 +105,7 @@ namespace AllUp2.Areas.AdminArea.Controllers
             if (category == null) return NotFound();
             
             return View(new CategoryUpdateVM { Name = category.Name, Description = category.Description }); // not finished yet
-        }
+        } // done
         [HttpPost]
         public IActionResult Update(int? id, CategoryUpdateVM categoryUpdateVM)
         {
@@ -148,6 +148,31 @@ namespace AllUp2.Areas.AdminArea.Controllers
 
             return RedirectToAction(nameof(Update), "category");
 
-        }
+        } // done
+
+        public IActionResult Delete(int? id)
+        {
+            if (id == null) return NotFound();
+            var category = _categoryService.FindCategory(id);
+            if (category == null) return NotFound();
+            //_appDbContext.Categories.Remove(category);
+            _categoryService.RemoveCategory(category);
+            //int ruselt = _appDbContext.SaveChanges(true);
+            var result = _categoryService.SaveChangesResult();
+            var isCacheExist = _categoryService.IsCacheCategoriesExist();
+            if (isCacheExist)
+            {
+                var existCategories = _categoryService.GetCategoriesFromCache();
+                var cacheCategory = _categoryService.FindCategoryFromList(id, existCategories);
+                if (cacheCategory != null)
+                {
+                    existCategories.Remove(cacheCategory);
+                    _categoryService.SetCategoriesToCache(existCategories);
+                }
+            }
+            if (result > 0) { return RedirectToAction(nameof(Index)); }
+            return NotFound();
+
+        } // done
     }
 }
