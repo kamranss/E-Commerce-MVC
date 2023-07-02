@@ -9,6 +9,7 @@
         public int Count { get; set; }
         public string ProductCode { get; set; }
         public bool IStock { get; set; }
+        public bool IsDeleted { get; set; }
         public string Description { get; set; }
         public int Rate { get; set; }
         public int Quantity { get; set; }
