@@ -146,6 +146,7 @@ namespace AllUp2.Areas.AdminArea.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [HttpPost]
         public IActionResult Delete(int? id)
         {
             if (id == null) return NotFound();
@@ -155,7 +156,7 @@ namespace AllUp2.Areas.AdminArea.Controllers
             _proService.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
-
+        [HttpPost]
         public IActionResult RemoveImage(int? id)
         {
             var image = _proService.FindImage(id);
