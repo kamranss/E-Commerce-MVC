@@ -1,0 +1,59 @@
+﻿@model ProductCreateVM
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/AdminArea/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Create New Product</h4>
+                    <form method="post" asp-controller="product" asp-action="create" class="forms-sample" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label asp-for="Name">Name</label>
+                            <input asp-for="Name" class="form-control" placeholder="Name">
+                            <span class="text-danger" asp-validation-for="Name"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Price"></label>
+                            <input asp-for="Price" class="form-control" placeholder="Price">
+                            <span class="text-danger" asp-validation-for="Price"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Count"></label>
+                            <input asp-for="Count" class="form-control" placeholder="Count">
+                            <span class="text-danger" asp-validation-for="Count"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Images"></label>
+                            <input asp-for="Images" multiple class="form-control" placeholder="Photo">
+                            <span class="text-danger" asp-validation-for="Images"></span>
+                        </div>
+                        <div class="form-group">
+                            <select asp-for=CategoryId class="form-select" asp-items="ViewBag.Categories" aria-label="Select Category">
+                                <option selected>Choose categroy</option>
+                                @* @foreach (var item in ViewBag.Categories)
+                                {
+                                <option value="@item.Id">@item.Name</option>
+                                }
+                                <span class="text-danger" asp-validation-for="CategoryId"></span>*@
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <a asp-controller="category" asp-action="index">Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*by using this approach we link the mentioned CDNs only with this view*@
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+}
+

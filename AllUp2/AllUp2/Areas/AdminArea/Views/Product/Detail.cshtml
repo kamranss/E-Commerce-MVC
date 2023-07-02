@@ -1,0 +1,49 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Areas/AdminArea/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Category Name</th>
+                                <th>Count</th>
+                                <th>Creation date</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        <td>@Model.Name</td>
+                        <td>@Model.Price</td>
+                        <td>@Model.Category.Name</td>
+                        <td>@Model.Count</td>
+                        <td>12 May 2017</td>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <a class="btn btn-dark" asp-controller="product" asp-action="index">Go Back</a>
+        </div>
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="">
+                @foreach (var item in Model.Images)
+                {
+                    <p>
+                        <img width="300" height="300" src="~/img/@item.ImageUrl" />
+                    </p>
+                    <a class="btn btn-danger" asp-controller="product" asp-action="deleteproductimage" asp-route-id="@item.Id">Delete Image</a>
+                }
+            </div>
+        </div>
+    </div>
+</div>
