@@ -1,14 +1,23 @@
 using AllUp2;
+using AllUp2.DAL;
 using Microsoft.EntityFrameworkCore;
+using static Org.BouncyCastle.Math.EC.ECCurve;
 
 var builder = WebApplication.CreateBuilder(args);
 var config = builder.Configuration;
 
 builder.Services.ServicesRegister();
-
+var _config = builder.Configuration;
 
 // Add services to the container.
 //builder.Services.AddControllersWithViews();
+
+
+builder.Services.AddDbContext<AppDbContext>(options =>  // here we are creating instance from our Dbcontext class whenever project will be run 
+{
+    options.UseSqlServer(_config.GetConnectionString("DefaultConnection"));
+});
+
 
 var app = builder.Build();
 
@@ -26,7 +35,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-//app.UseAuthentication();
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllerRoute(
            name: "areas",

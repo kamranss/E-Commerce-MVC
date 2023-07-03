@@ -22,6 +22,7 @@ namespace AllUp2.Services.Home
             homeVM.Categories = _appDbContext.Categories.Where(c => c.IsMain == true).ToList();
             homeVM.Blogs = _appDbContext.Blogs.OrderBy(b => b.Id).ToList();
             homeVM.Experts = _appDbContext.Experts.ToList();
+            homeVM.Banners = _appDbContext.Banners.Where(b => b.IsFirst == true).ToList();
             homeVM.Posts = _appDbContext.Posts.ToList();
             homeVM.Testimonials = _appDbContext.Testimonials.ToList();
 

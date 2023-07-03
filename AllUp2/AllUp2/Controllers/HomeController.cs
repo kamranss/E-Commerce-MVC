@@ -16,14 +16,14 @@ namespace AllUp2.Controllers
     {
         private readonly AppDbContext _appDbContext;
         private readonly IProductService _iporduct;
-        private readonly AccountService _account;
+        //private readonly AccountService _account;
         private readonly IHomeService _homeService;
 
-        public HomeController(AppDbContext appDbContext, IProductService iporduct, AccountService account, IHomeService homeService)
+        public HomeController(AppDbContext appDbContext, IProductService iporduct, /*AccountService account,*/ IHomeService homeService)
         {
             _appDbContext = appDbContext;
             _iporduct = iporduct;
-            _account = account;
+            //_account = account;
             _homeService = homeService;
         }
 
@@ -45,7 +45,7 @@ namespace AllUp2.Controllers
             //homeVM.Blogs = _appDbContext.Blogs.Skip(1).Take(2).ToList();
            
             var result = _iporduct.Sum(2, 4);
-            _account.Login("...", "..."); // for test purposes
+           /* _account.Login("...", "...");*/ // for test purposes
 
             return View(homeContent);
         }

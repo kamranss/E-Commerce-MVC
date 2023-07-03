@@ -6,7 +6,8 @@ namespace AllUp2.ViewModels.AdminVM.Product
     {
         [Required, StringLength(100)]
         public string Name { get; set; }
-        public double Price { get; set; }
+        public decimal? Price { get; set; }
+        public decimal? DiscountPrice { get; set; }
         public int Count { get; set; }
         public int CategoryId { get; set; }
         [Required]

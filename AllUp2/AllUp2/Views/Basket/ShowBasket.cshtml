@@ -1,7 +1,7 @@
 ﻿@model List<BasketVM>
 @{
     ViewData["Title"] = "ShowBasket";
-    double totalPrice = Model.Sum(p => p.BasketCount * p.Price);
+    decimal? totalPrice = Model.Sum(p => p.BasketCount * p.Price);
 }
 
 @*The data still not dynamic*@

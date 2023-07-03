@@ -14,8 +14,8 @@
             <div class="slider-content-wrapper">
                 <div class="container-fluid custom-container">
                     <div class="slider-content">
-                        <h4 data-animation="fadeInDown" data-delay="0.5s" class="sub-title">@item.Suggestion</h4> Save $120 when you buy
-                        <h1 data-animation="fadeInLeft" data-delay="0.5s" class="main-title "><span>@item.Title </span> Fulldive VR.</h1> 2020 Virtual Reality
+                        <h4 data-animation="fadeInDown" data-delay="0.5s" class="sub-title">@item.Suggestion</h4>
+                        <h1 data-animation="fadeInLeft" data-delay="0.5s" class="main-title "><span>@item.Title </span> @item.Name</h1> 2020 Virtual Reality
                         <p data-animation="fadeInRightBig" data-delay="0.5s">@item.Description</p> Explore and immerse in exciting 360 content with Fulldive’s all-in-one virtual reality platform
                         <a data-animation="zoomIn" data-delay="0.5s" class="main-btn " href="single-product.html">Shop Now</a>
                     </div>
@@ -25,18 +25,18 @@
     }
    
 </section>
-
 <!--====== Slider Part Ends ======-->
 <!--====== Banner Part Start ======-->
 
 <div class="banner-area banner-bg">
+  
     <div class="container-fluid custom-container">
         <div class="row">
            @foreach (var item in Model.Banners)
             {
                 <div class="col-md-6">
                     <div class="banner-image">
-                        <a href="shop-4-column.html"><img src="~/assets/images/@item.ImageUrl" alt="banner"></a>
+                        <a href="shop-4-column.html"> <img src="~/assets/images/@item.ImageUrl" alt="banner"></a>
                     </div> <!-- banner image -->
                 </div>
             }
@@ -58,22 +58,25 @@
             </div>
         </div> <!-- row -->
         <div class="row category-active">
-            @foreach (var item in Model.Categories)
+          @for (int i = 0; i < Model.Categories.Count-1; i++)
             {
                 <div class="col-lg-2">
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/@item.ImageUrl" alt="category">
-                        <p>@item.Name</p>
-                    </a>
-                </div> <!-- single category -->
-                <div class="single-category text-center">
-                    <a target="_blank" href="shop-left-sidebar.html">
-                        <img src="~/assets/images/@item.ImageUrl" alt="category">
-                        <p>@item.Name</p>
-                    </a>
-                </div> <!-- single category -->
-            </div>
+                    <div class="single-category text-center">
+                        <a target="_blank" href="shop-left-sidebar.html">
+                            <img src="~/assets/images/@Model.Categories[i].ImageUrl" alt="category">
+                            <p>@Model.Categories[i].Name</p>
+                        </a>
+                    </div> <!-- single category -->
+                    @if (i != Model.Categories.Count)
+                    {
+                        <div class="single-category text-center">
+                            <a target="_blank" href="shop-left-sidebar.html">
+                                <img src="~/assets/images/@Model.Categories[i+1].ImageUrl" alt="category">
+                                <p>@Model.Categories[i+1].Name</p>
+                            </a>
+                        </div> <!-- single category -->
+                    }
+                </div>
             }
            
         </div> <!-- row -->
