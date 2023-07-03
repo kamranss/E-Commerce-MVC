@@ -12,7 +12,7 @@ namespace AllUp2.Areas.AdminArea.Controllers
 {
     
     [Area("AdminArea")]
-    [ValidateAntiForgeryToken]
+    
     public class ProductController : Controller
     {
         private readonly IProService _proService;

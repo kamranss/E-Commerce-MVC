@@ -5,6 +5,7 @@ using System.Reflection.Metadata;
 using System;
 using Microsoft.AspNetCore.Identity;
 using System.Reflection.Emit;
+using Org.BouncyCastle.Bcpg.Sig;
 
 namespace AllUp2.DAL
 {
@@ -30,6 +31,7 @@ namespace AllUp2.DAL
         public DbSet<Color> Colors { get; set; }
         public DbSet<SocialPlatform> SocialPlatforms { get; set; }
         public DbSet<About> Abouts { get; set; }
+        public DbSet<Service> Services { get; set; }
 
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{

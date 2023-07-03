@@ -30,6 +30,7 @@
         public Product()
         {
             Images = new List<Image>();
+
         }
     }
 }

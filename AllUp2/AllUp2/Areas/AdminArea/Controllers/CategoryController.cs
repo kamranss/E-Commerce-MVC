@@ -9,7 +9,7 @@ using Microsoft.Extensions.Caching.Memory;
 namespace AllUp2.Areas.AdminArea.Controllers
 {
     [Area("AdminArea")]
-    [ValidateAntiForgeryToken]
+    //[ValidateAntiForgeryToken]
     public class CategoryController : Controller
     {
         private AppDbContext _appDbContext;
@@ -23,12 +23,12 @@ namespace AllUp2.Areas.AdminArea.Controllers
             _categoryService = categoryService;
         }
 
-        [AllowAnonymous] // this meeans that anyone can access this end point
+        /*[AllowAnonymous] */// this meeans that anyone can access this end point
         public IActionResult Index()
         {
             //List<Category> cachedcategory;
             //bool categoryAlreadyExist = _memoryCach.TryGetValue("CachedCategory", out cachedcategory);
-             var cachedcategory = _categoryService.GetCategoriesFromCache();
+            var cachedcategory = _categoryService.GetCategoriesFromCache();
             bool categoryAlreadyExist = _categoryService.IsCacheCategoriesExist();
 
             if (!categoryAlreadyExist)
@@ -38,7 +38,9 @@ namespace AllUp2.Areas.AdminArea.Controllers
 
                 //var cachEnteredOption = new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromDays(10));
                 //_memoryCach.Set("CachedCategory", categories, cachEnteredOption);
+
                 _categoryService.SetCategoriesToCache(categories);
+
                 //_appDbContext.ChangeTracker.TrackGraph(category, e => e.Entry.State = EntityState.Detached);
                 return View(categories);
             }

@@ -15,9 +15,9 @@
 	<div class="navbar-wrapper  ">
 		<div class="navbar-content scroll-div ">
 
-			<div class="">
+			<div class="">  @*user info*@
 				<div class="main-menu-header">
-					<img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="User-Profile-Image">
+					<img class="img-radius" src="~/admin/assets/images/user/avatar-2.jpg" alt="User-Profile-Image">
 					<div class="user-details">
 						<span>John Doe</span>
 						<div id="more-details">UX Designer<i class="fa fa-chevron-down m-l-5"></i></div>
@@ -31,7 +31,25 @@
 					</ul>
 				</div>
 			</div>
+			<ul class="nav pcoded-inner-navbar ">
+				<li class="nav-item pcoded-menu-caption">
+					<label>Admin_Panel</label>
+				</li>
 
+				<li class="nav-item pcoded-hasmenu">
+					<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-layout"></i></span><span class="pcoded-mtext">Main_Objects</span></a>
+					<ul class="pcoded-submenu">
+						<li><a asp-area="" asp-controller="home" asp-action="index" target="_blank">Index</a></li>
+						<li><a asp-area="adminarea" asp-controller="dashboard" asp-action="index" target="_blank">dashboard</a></li>
+						<li><a asp-area="adminarea" asp-controller="category" asp-action="index" target="_blank">Categories</a></li>
+						<li><a asp-area="adminarea" asp-controller="product" asp-action="index" target="_blank">Products</a></li>
+						<li><a asp-area="adminarea" asp-controller="slider" asp-action="index" target="_blank">Sliders</a></li>
+						<li><a asp-area="adminarea" asp-controller="user" asp-action="index" target="_blank">Users</a></li>
+						<li><a asp-area="adminarea" asp-controller="role" asp-action="index" target="_blank">Roles</a></li>
+					</ul>
+				</li>
+
+			</ul>
 			<ul class="nav pcoded-inner-navbar ">
 				<li class="nav-item pcoded-menu-caption">
 					<label>Navigation</label>
