@@ -109,27 +109,54 @@ namespace AllUp2.Controllers
 
             return RedirectToAction(nameof(Login));
         }
-        public async Task<IActionResult> AddRole()
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ResendOTP(string email) // this method serves for generating new OTP and sending this otp to user email
         {
-            //if (await _roleManager.RoleExistsAsync("Admin)")
-            //{
-            //    await _roleManager.CreateAsync(new IdentityRole { Name = "SuperAdmin" });
-            //}
+            string otp = OtpService.GenerateOTP();
+            AppUser existUser = await _userManager.FindByEmailAsync(email);
+            existUser.OTP = otp; // we are renewing previous Otp
+            await _userManager.UpdateAsync(existUser);
+            string body = string.Empty;
+            string path = "wwwroot/templates/verify.html";
+            string subject = "hey you verify your email!";
 
+            body = _fileService.ReadFile(path, body);
+            body = body.Replace("{{otp}}", otp);
+            body = body.Replace("{{fullname}}", existUser.FullName);
 
-            //await  _roleManager.CreateAsync(new IdentityRole { Name = "SuperAdmin" });
-            //await  _roleManager.CreateAsync(new IdentityRole { Name = "Admin" });
-            //await  _roleManager.CreateAsync(new IdentityRole { Name = "Member" });
+            _emailService.Send(existUser.Email, subject, body);
 
+            //return RedirectToAction("index", "home", new {area="AdminArea"}); // if we want redirect to another area we should do like that 
+            //return RedirectToAction("index", "home");
 
-            foreach (var item in Enum.GetValues(typeof(RoleEnums)))
-            {
-                await _roleManager.CreateAsync(new IdentityRole { Name = item.ToString() });
-            }
-            return Content("added");
+            return RedirectToAction(nameof(VertifyEmail), new { Email = existUser.Email }); // we are sending Email within the anonim object to the action 
+
         }
 
+        public async Task<IActionResult> ChangePassowrd(ChangePasswordVM changePasswordVM)
+        {
+            if (!ModelState.IsValid) return View();
+            AppUser existUser = await _userManager.FindByNameAsync(User.Identity.Name); // finding user referring to session
+            IdentityResult result = await _userManager.ChangePasswordAsync(existUser, changePasswordVM.CurrentPassword, changePasswordVM.NewPassword);
 
+            if (result.Succeeded)
+            {
+                ViewBag.IsSuccess = true;
+                return View(changePasswordVM);
+            }
+            else
+            {
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+
+                }
+                return View(changePasswordVM);
+            }
+        }
         public IActionResult Login()
         {
 
@@ -188,11 +215,27 @@ namespace AllUp2.Controllers
 
             return RedirectToAction("index", "home");
         }
-        //private static string GenerateOTP()
-        //{
-        //    Random random = new Random();
-        //    int otpnumber = random.Next(100000, 999999); // we will give squence and it will provide random number -- length will be 6
-        //    return otpnumber.ToString();
-        //}
+
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("login", "account");
+
+        }
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> AddRole()
+        {
+
+            foreach (var item in Enum.GetValues(typeof(RoleEnums)))
+            {
+                await _roleManager.CreateAsync(new IdentityRole { Name = item.ToString() });
+            }
+            return Content("added");
+        }
+   
     }
 }

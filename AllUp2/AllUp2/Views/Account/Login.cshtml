@@ -62,12 +62,12 @@
                                 </label>
                             </div>
                             <div class="single-form">
-                                <button class="main-btn main-btn-2">Login</button>
+                                <button asp-controller="account" asp-action="Login" class="main-btn main-btn-2">Login</button>
                             </div>
                         </form>
                         <p class="mt-20"><a href="#">Lost your password?</a></p>
                         <div class="text-center mt-4 font-weight-light">
-                            Don't have an account? <a asp-action="Register" class="text-primary">Create</a>
+                            Don't have an account? <a asp-controller="account" asp-action="Register" class="text-primary">Create</a>
                         </div>
                     </div>
                 </div>

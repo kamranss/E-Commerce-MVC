@@ -30,7 +30,7 @@ namespace AllUp2
             //    option.IdleTimeout = TimeSpan.FromMinutes(10);
             //});
             services.AddHttpContextAccessor();
-            services.AddScoped<IBasketService, BasketService>();
+            
             services.AddIdentity<AppUser, IdentityRole>(options =>
             {
                 options.Password.RequiredLength = 8;
@@ -51,11 +51,13 @@ namespace AllUp2
             .AddDefaultTokenProviders() // this basicly serves for token generation
             .AddErrorDescriber<CustomidentityErrorDescriber>(); // this is serving for get error descriptions which we indicated within helper 
             //services.AddSignalR();
+
+
             services.AddScoped<IHomeService, HomeService>();
             services.AddScoped<IProductService, ProductService>(); // using this approach we are asking from Program class service that create instance for us from IProduct interface and return ProductService
             services.AddScoped<IEmailService, EmailService>(); // injecting our service within IO container
             services.AddScoped<IFileService, FileService>(); // injecting our service within IO container
-            //services.AddScoped<IBasketService, BasketService>();
+            services.AddScoped<IBasketService, BasketService>();
             services.AddScoped<IProService, ProService>();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<OtpService>(); // generate otp service

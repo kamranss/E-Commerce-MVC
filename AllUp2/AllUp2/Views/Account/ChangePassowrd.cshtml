@@ -1,0 +1,40 @@
+﻿@model ChangePasswordVM
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap-grid.min.css" integrity="sha512-EAgFb1TGFSRh1CCsDotrqJMqB2D+FLCOXAJTE16Ajphi73gQmfJS/LNl6AsjDqDht6Ls7Qr1KWsrJxyttEkxIA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ChangePassowrd</title>
+</head>
+<form asp-controller="Account" asp-action="ChangePassword" method="post" enctype="multipart/form-data">
+    @if (ViewBag.IsSuccess == true)   @*checking  if password changed *@
+    {
+        <div class="alert alert-success">
+            Password has been updated succefully!
+        </div>
+    }
+    <div asp-validation-summary="All" style="color:red"></div>
+    <h2>Update Password</h2>
+    <div class="form-group">
+        <input asp-for="CurrentPassword" placeholder="Current Password">
+        <span asp-validation-for="CurrentPassword" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input asp-for="NewPassword" placeholder="New Password">
+        <span asp-validation-for="NewPassword" class="text-danger"></span>
+    </div>
+    <div class="form-check">
+        <input asp-for="NewConfirmedPAssword" placeholder="New Confirm Password">
+        <span asp-validation-for="NewConfirmedPAssword" class="text-danger"></span>
+    </div>
+    <button type="submit" value="Confirm" class="btn btn-primary">Submit</button>
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<body>
+</body>
+</html>
