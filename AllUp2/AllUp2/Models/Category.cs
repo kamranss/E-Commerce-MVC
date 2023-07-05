@@ -11,7 +11,6 @@ namespace AllUp2.Models
         public string? ImageUrl { get; set; }
         //public int? ImageId { get; set; }
         //public Image Image { get; set; }
-
         //[ForeignKey(nameof(Category.Id))]
         public int? ParentCategoryId { get; set; }
         public Category ParentCategory { get; set; }

@@ -82,7 +82,7 @@ namespace AllUp2.Areas.AdminArea.Services.ProductS
 
         public List<Category> GetCategories()
         {
-            List<Category> categories= (_appDbContext.Categories.ToList());
+            List<Category> categories= _appDbContext.Categories.ToList();
             return categories;
         } // done referring to create action without Post method
 

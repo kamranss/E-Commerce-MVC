@@ -87,7 +87,11 @@ namespace AllUp2.Areas.AdminArea.Controllers
 
         public IActionResult Update(int? id)
         {
-            ViewBag.Categories = _proService.GetCategories();
+            var selectListItems = _proService.GetCategories().Select(c => new SelectListItem
+            {
+                Text = c.Name // Replace with the appropriate property of Category representing the display text
+            });
+            ViewBag.Categories = selectListItems;
             if (id == null) { return NotFound(); }
 
            var product = _proService.FindProduct(id);

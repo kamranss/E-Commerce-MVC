@@ -30,6 +30,7 @@
     <link href="~/admin/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
     <link href="~/admin/build/css/custom.min.css" rel="stylesheet">
     <link href="~/admin/build/css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
 </head>
@@ -391,15 +392,15 @@
                                                 <td>
                                                     <button  class="btn btn-info p-5">
                                                         <a asp-controller="product" asp-action="update" asp-route-id="@item.Id">
-                                                            <i class="fa-edit"></i>
+                                                            <i class="fa-solid fa-pen-to-square"></i>
                                                         </a>
                                                     </button>
                                                   
                                                     <a class="btn btn-primary p-5" asp-controller="product" asp-action="detail" asp-route-id="@item.Id">
-                                                        <i class="fa-info"></i>
+                                                        <i class="fa-solid fa-circle-info"></i>
                                                     </a>
                                                     <a class="btn btn-danger" asp-controller="product" asp-action="delete" asp-route-id="@item.Id">
-                                                        <i class="fa-car"></i>
+                                                        <i class="fa-solid fa-trash-arrow-up"></i>
                                                     </a>
                                                 </td>
                                             </tr>

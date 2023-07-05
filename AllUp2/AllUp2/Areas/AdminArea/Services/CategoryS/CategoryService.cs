@@ -1,6 +1,7 @@
 ﻿using AllUp2.DAL;
 using AllUp2.Models;
 using AllUp2.ViewModels.AdminVM.Category;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace AllUp2.Areas.AdminArea.Services.CategoryS
@@ -38,7 +39,8 @@ namespace AllUp2.Areas.AdminArea.Services.CategoryS
 
         public Category FindCategory(int? id)
         {
-            var category = _appDbContext.Categories.FirstOrDefault(c => c.Id == id);
+            var category = _appDbContext.Categories
+                .FirstOrDefault(c => c.Id == id);
             return category;
         } // done getting specific category from Db
 
