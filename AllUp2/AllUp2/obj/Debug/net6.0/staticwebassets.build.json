@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JFPSKTySYGKOc9rDkjzSPRUeooW9510UQsg2iPhb92k=",
+  "Hash": "hYDka35r8a056tMV8T5xQ9mZcLEO0U/Em90cjwpilKo=",
   "Source": "AllUp2",
   "BasePath": "_content/AllUp2",
   "Mode": "Default",
@@ -72197,6 +72197,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\plugins\\js\\ajax-contact.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\templates\\ForgetPasswordVerifyEmail.html",
+      "SourceId": "AllUp2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\",
+      "BasePath": "_content/AllUp2",
+      "RelativePath": "templates/ForgetPasswordVerifyEmail.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\templates\\ForgetPasswordVerifyEmail.html"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\templates\\Otppage\\JavaScript.js",

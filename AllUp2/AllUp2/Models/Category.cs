@@ -9,9 +9,9 @@ namespace AllUp2.Models
         public string? Description { get; set; }
         public bool? IsMain { get; set; }
         public string? ImageUrl { get; set; }
+        public DateTime? CreationDate { get; set; }
         //public int? ImageId { get; set; }
         //public Image Image { get; set; }
-        //[ForeignKey(nameof(Category.Id))]
         public int? ParentCategoryId { get; set; }
         public Category ParentCategory { get; set; }
         public List<Category> SubCategories { get; set; }

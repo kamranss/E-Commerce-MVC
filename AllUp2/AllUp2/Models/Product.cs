@@ -14,6 +14,7 @@
         public string? Description { get; set; }
         public int? Rate { get; set; }
         public int? Quantity { get; set; }
+        public DateTime? CreationDate { get; set; }
         public int? BrandId { get; set; }
         public Brand Brand { get; set; }
         public int? ColorId { get; set; }

@@ -16981,6 +16981,10 @@
       "PackagePath": "staticwebassets\\assets\\plugins\\js\\ajax-contact.js"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\templates\\ForgetPasswordVerifyEmail.html",
+      "PackagePath": "staticwebassets\\templates\\ForgetPasswordVerifyEmail.html"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\templates\\Otppage\\JavaScript.js",
       "PackagePath": "staticwebassets\\templates\\Otppage\\JavaScript.js"
     },

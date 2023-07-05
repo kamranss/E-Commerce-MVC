@@ -236,6 +236,56 @@ namespace AllUp2.Controllers
             }
             return Content("added");
         }
-   
+
+
+        public IActionResult ForgetPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ForgetPassword(ForgetPasswordVM forgetPasswordVM)
+        {
+            if (!ModelState.IsValid) return View();
+            AppUser existUser = await _userManager.FindByEmailAsync(forgetPasswordVM.Email);
+            if (existUser == null)
+            {
+                ModelState.AddModelError("Email", "User Not Found");
+                return View(forgetPasswordVM);
+            }
+
+            string token = await _userManager.GeneratePasswordResetTokenAsync(existUser); // it is method for regenarating token for user when password changed
+            // creating link to redirect us -- The reques.Schema mainly serve to convert link into the usable format -- it puts HTTP to the biginning of the link
+            // Request.Host puts local host at the beginning of the link
+            string link = Url.Action(nameof(ResetPassword),
+                "Account",
+                new { userId = existUser.Id, token },
+                Request.Scheme,
+                Request.Host.ToString());
+
+            string body = string.Empty;
+            string path = "wwwroot/templates/ForgetPasswordVerifyEmail.html";
+            string subject = "hey you verify your email!";
+
+            body = _fileService.ReadFile(path, body);
+            body = body.Replace("{{link}}", link); // replacing the button link which have beet sent to client email address
+            body = body.Replace("{{fullname}}", existUser.FullName);
+
+            _emailService.Send(existUser.Email, subject, body);
+            return RedirectToAction(nameof(ResetPasswordVerifiedEmail));
+        }
+
+        // html sended to email
+        public IActionResult ResetPasswordVerifiedEmail()
+        {
+            return View();
+        }
+
+        public IActionResult ResetPassword(int userId, string token)
+        {
+            return View(new ResetPasswordVM { Token = token, Userid = userId });
+        }
+
     }
 }
