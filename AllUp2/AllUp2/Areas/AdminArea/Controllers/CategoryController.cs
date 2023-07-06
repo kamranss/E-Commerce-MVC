@@ -4,6 +4,7 @@ using AllUp2.Models;
 using AllUp2.ViewModels.AdminVM.Category;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace AllUp2.Areas.AdminArea.Controllers
@@ -60,6 +61,7 @@ namespace AllUp2.Areas.AdminArea.Controllers
         }// done
         public IActionResult Create()
         {
+            ViewBag.Categories = new SelectList(_appDbContext.Categories.ToList(), "Id", "Name");
             return View();
         } // done
         [HttpPost]

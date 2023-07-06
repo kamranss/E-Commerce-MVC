@@ -18,10 +18,12 @@ namespace AllUp2.Areas.AdminArea.Controllers
         private readonly IProService _proService;
         private readonly IWebHostEnvironment _webHostEnvironment;
 
+
         public ProductController(IProService proService, IWebHostEnvironment webHostEnvironment)
         {
             _proService = proService;
             _webHostEnvironment = webHostEnvironment;
+           
         }
 
         public IActionResult Index(int page, int take = 3)
@@ -42,7 +44,12 @@ namespace AllUp2.Areas.AdminArea.Controllers
 
         public IActionResult Create()
         {
-            ViewBag.Categories = _proService.GetCategories();
+            List<Category> categories = _proService.GetCategories();
+            IEnumerable<SelectListItem> selectListItems = categories
+                .Select(c => new SelectListItem { Value = c.Id.ToString(), Text = c.Name });
+            ViewBag.Categories = selectListItems;
+            //ViewBag.Categories = new SelectList(_appDbContext.Categories.ToList(), "Id", "Name");
+           
             return View();
         }
         [HttpPost]

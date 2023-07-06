@@ -125,6 +125,7 @@ namespace AllUp2.Areas.AdminArea.Services.CategoryS
             {
                 Name = categoryCreateVM.Name,
                 Description = categoryCreateVM.Description,
+                ParentCategoryId = categoryCreateVM.ParentCategoryId,
             };
             return newcategory;
         }
