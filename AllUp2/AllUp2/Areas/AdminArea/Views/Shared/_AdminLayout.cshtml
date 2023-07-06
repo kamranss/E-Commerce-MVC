@@ -28,18 +28,25 @@
 
     <!-- Custom Theme Style -->
     <link href="~/admin/build/css/custom.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/toastr/content/content/toastr.css"> @*toast*@
+
     @RenderSection("Styles", required: false)
 </head>
 <body class="nav-md">
     <div class="container body">
         <div class="main_container">
     @await Component.InvokeAsync("Aheader");
-
+            <script src="~/admin/vendors/jquery/dist/jquery.min.js"></script>
+            <script src="~/toastr/content/scripts/toastr.js"></script>
         @RenderBody()
 
         </div>
     </div>
-    <script src="~/admin/vendors/jquery/dist/jquery.min.js"></script>
+    @*Toast*@
+  
+
+ 
     <!-- Bootstrap -->
     <script src="~/admin/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->

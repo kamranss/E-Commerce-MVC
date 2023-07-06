@@ -32,7 +32,9 @@
     <link href="~/admin/build/css/style.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom Theme Style -->
-    <link href="../build/css/custom.min.css" rel="stylesheet">
+    <link href="/build/css/custom.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/toastr/content/content/toastr.css"> @*toast*@
 </head>
 
 <body class="nav-md">
@@ -369,7 +371,7 @@
                                         {
                                             <tr>
                                                 <td>@item.Name</td>
-                                                <td>@item.Description.Substring(0,20)</td>
+                                                <td>@item.Description.Substring(0,5)</td>
                                                 <td>
                                                    <div class="dddd">
                                                         <a class="btn but btn-primary" asp-controller="Category" asp-action="Update" asp-route-id="@item.Id">  <i class="fa-solid fa-pen-to-square"></i></a>
@@ -399,7 +401,13 @@
                 <div class="clearfix"></div>
             </footer>
 
+           
+
+            @*Toast*@
+            <script src="~/toastr/content/scripts/toastr.js"></script>
             <script src="~/admin/vendors/jquery/dist/jquery.min.js"></script>
+             @await Html.PartialAsync("~/Areas/AdminArea/Views/Shared/PartialNotifications/_ParNotification.cshtml")
+       
             <!-- Bootstrap -->
             <script src="~/admin/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
             <!-- FastClick -->
@@ -428,3 +436,5 @@
 </body>
 
 </html>
+
+

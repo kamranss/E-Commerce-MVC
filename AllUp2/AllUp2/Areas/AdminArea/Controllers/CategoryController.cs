@@ -71,7 +71,9 @@ namespace AllUp2.Areas.AdminArea.Controllers
             if (existWithSameName)
             {
                 ModelState.AddModelError("Name", "In the database the category with the same Name already exist!");
+                TempData["error"] = "Not Succefull";
                 return View();
+              
             }
             //Category newcategory = new Category()
             //{
@@ -90,11 +92,14 @@ namespace AllUp2.Areas.AdminArea.Controllers
             {
                 var categories = _categoryService.GetAllCategories();
                 _categoryService.SetCategoriesToCache(categories);
+                TempData["success"] = "Created Succesfully";
                 return RedirectToAction(nameof(Index));
             }
             var cachedcategory = _categoryService.GetCategoriesFromCache();
             _categoryService.AddCategoryToList(cachedcategory, newCategory);
             _categoryService.SetCategoriesToCache(cachedcategory);
+
+            TempData["success"] = "Created Succesfully";
 
             return RedirectToAction(nameof(Index));
         }

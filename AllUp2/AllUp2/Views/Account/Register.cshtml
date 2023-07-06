@@ -51,7 +51,7 @@
                             Already have an account? <a asp-action="login" class="text-primary">Login</a>
                         </div>
                         <div class="text-danger" asp-validation-summary="ModelOnly"></div>
-                        <form action="#">
+                        <form method="post">
                             <div class="form-group">
                                 <input asp-for="FullName" class="form-control form-control-lg" placeholder="FullName">
                                 <span asp-validation-for="FullName" class="text-danger"></span>
@@ -74,7 +74,7 @@
                             </div>
 
                             <div class="single-form">
-                                <button asp-controller="account" asp-action="Register" class="main-btn main-btn-2">Register</button>
+                                <input type="submit" asp-controller="Account" asp-action="Register" class="main-btn main-btn-2"/>
                             </div>
                         </form>
                     </div>

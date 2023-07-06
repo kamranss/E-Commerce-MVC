@@ -17001,6 +17001,50 @@
       "PackagePath": "staticwebassets\\templates\\verify.html"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\toastr\\.nupkg.metadata",
+      "PackagePath": "staticwebassets\\toastr\\.nupkg.metadata"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\toastr\\.signature.p7s",
+      "PackagePath": "staticwebassets\\toastr\\.signature.p7s"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\toastr\\content\\content\\toastr.css",
+      "PackagePath": "staticwebassets\\toastr\\content\\content\\toastr.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\toastr\\content\\content\\toastr.less",
+      "PackagePath": "staticwebassets\\toastr\\content\\content\\toastr.less"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\toastr\\content\\content\\toastr.min.css",
+      "PackagePath": "staticwebassets\\toastr\\content\\content\\toastr.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\toastr\\content\\content\\toastr.scss",
+      "PackagePath": "staticwebassets\\toastr\\content\\content\\toastr.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\toastr\\content\\scripts\\toastr.js",
+      "PackagePath": "staticwebassets\\toastr\\content\\scripts\\toastr.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\toastr\\content\\scripts\\toastr.min.js",
+      "PackagePath": "staticwebassets\\toastr\\content\\scripts\\toastr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\toastr\\toastr.2.1.1.nupkg",
+      "PackagePath": "staticwebassets\\toastr\\toastr.2.1.1.nupkg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\toastr\\toastr.2.1.1.nupkg.sha512",
+      "PackagePath": "staticwebassets\\toastr\\toastr.2.1.1.nupkg.sha512"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\toastr\\toastr.nuspec",
+      "PackagePath": "staticwebassets\\toastr\\toastr.nuspec"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.AllUp2.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

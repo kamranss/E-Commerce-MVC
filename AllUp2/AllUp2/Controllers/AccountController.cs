@@ -282,9 +282,30 @@ namespace AllUp2.Controllers
             return View();
         }
 
-        public IActionResult ResetPassword(int userId, string token)
+        public IActionResult ResetPassword(string userId, string token)
         {
             return View(new ResetPasswordVM { Token = token, Userid = userId });
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ResetPassword(ResetPasswordVM resetPasswordVM)
+        {
+            if (!ModelState.IsValid) return View(resetPasswordVM);
+
+            AppUser existUser = await _userManager.FindByIdAsync(resetPasswordVM.Userid); // finding user
+            if (existUser == null)
+            {
+                return NotFound();
+            }
+            if (await _userManager.CheckPasswordAsync(existUser, resetPasswordVM.NewPassword)) // checking whether newly added password same with the previous passwod
+            {
+                ModelState.AddModelError("", "You already used this password");
+                return View(resetPasswordVM);
+            }
+            await _userManager.ResetPasswordAsync(existUser, resetPasswordVM.Token, resetPasswordVM.NewPassword); // reseting password
+            return RedirectToAction(nameof(Login));
         }
 
     }

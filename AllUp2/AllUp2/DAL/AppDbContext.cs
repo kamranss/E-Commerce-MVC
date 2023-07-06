@@ -6,10 +6,11 @@ using System;
 using Microsoft.AspNetCore.Identity;
 using System.Reflection.Emit;
 using Org.BouncyCastle.Bcpg.Sig;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace AllUp2.DAL
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
         public AppDbContext(DbContextOptions option) : base(option)
         {
