@@ -50,7 +50,7 @@ namespace AllUp2
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders() // this basicly serves for token generation
             .AddErrorDescriber<CustomidentityErrorDescriber>(); // this is serving for get error descriptions which we indicated within helper 
-            //services.AddSignalR();
+            services.AddSignalR();
 
 
             services.AddScoped<IHomeService, HomeService>();

@@ -1,5 +1,6 @@
 using AllUp2;
 using AllUp2.DAL;
+using AllUp2.Hubs;
 using Microsoft.EntityFrameworkCore;
 using static Org.BouncyCastle.Math.EC.ECCurve;
 
@@ -43,5 +44,5 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
+app.MapHub<ChatHub>("/chat"); // fi after requst you will see -- Connection Id Required-- it means that you are already connected
 app.Run();
