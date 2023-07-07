@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "w26KYrnXNMwcSgUpMrOxF+SagCN6X4LndHFuUldIOx4=",
+  "Hash": "iHTZRsCOk7wyNjcxykiP7RbNhoEx9gQxQX6lwSqbzBA=",
   "Source": "AllUp2",
   "BasePath": "_content/AllUp2",
   "Mode": "Default",
@@ -70380,6 +70380,40 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\ionicons28b5.woff"
     },
     {
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\assets\\images\\06d4f98c-b96b-4de3-8fe5-b667dbbeee6fJava Controller.PNG",
+      "SourceId": "AllUp2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\",
+      "BasePath": "_content/AllUp2",
+      "RelativePath": "assets/images/06d4f98c-b96b-4de3-8fe5-b667dbbeee6fJava Controller.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\06d4f98c-b96b-4de3-8fe5-b667dbbeee6fJava Controller.PNG"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\assets\\images\\4b8b6a5b-682e-40c1-be45-19a76d8e5371Java Controller.PNG",
+      "SourceId": "AllUp2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\",
+      "BasePath": "_content/AllUp2",
+      "RelativePath": "assets/images/4b8b6a5b-682e-40c1-be45-19a76d8e5371Java Controller.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\4b8b6a5b-682e-40c1-be45-19a76d8e5371Java Controller.PNG"
+    },
+    {
       "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\assets\\images\\author-1.png",
       "SourceId": "AllUp2",
       "SourceType": "Discovered",
@@ -71330,6 +71364,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\logo-white.png"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\assets\\images\\NotFound.jfif",
+      "SourceId": "AllUp2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\",
+      "BasePath": "_content/AllUp2",
+      "RelativePath": "assets/images/NotFound.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\NotFound.jfif"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\assets\\images\\payment.png",

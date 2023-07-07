@@ -77,7 +77,7 @@ namespace AllUp2.Areas.AdminArea.Controllers
                     image.IsMain = true;
                 }
 
-                image.ImageUrl = item.SaveImage(_webHostEnvironment, "img");
+                image.ImageUrl = item.SaveImage(_webHostEnvironment, "assets/images");
                 //product.Images = new List<Image>();
                 product.Images.Add(image);
             }
@@ -85,6 +85,7 @@ namespace AllUp2.Areas.AdminArea.Controllers
             product.Price = productCreateVM.Price;
             product.Count = productCreateVM.Count;
             product.CategoryId = productCreateVM.CategoryId;
+            product.CreationDate = DateTime.Now;
 
             _proService.Create(product);
 

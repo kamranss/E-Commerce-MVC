@@ -10,6 +10,7 @@
         public string? Name { get; set; }
         public string? Suggestion { get; set; }
         public string? Description { get; set; }
+        public DateTime CreationDate { get; set; }
         public int? ProductId { get; set; }
         public Product Product { get; set; }
     }

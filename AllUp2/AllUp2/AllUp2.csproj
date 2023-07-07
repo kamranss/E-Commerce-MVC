@@ -44,10 +44,8 @@
   <ItemGroup>
     <Folder Include="Areas\AdminArea\Data\" />
     <Folder Include="Areas\AdminArea\Models\" />
-    <Folder Include="Areas\AdminArea\Services\SliderS\" />
     <Folder Include="Areas\AdminArea\Services\RoleS\" />
     <Folder Include="Areas\AdminArea\Services\UserS\" />
-    <Folder Include="ViewModels\AdminVM\Slider\" />
   </ItemGroup>
 
   <ItemGroup>
