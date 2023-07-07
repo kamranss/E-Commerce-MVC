@@ -77,7 +77,7 @@ namespace AllUp2.Areas.AdminArea.Controllers
                     image.IsMain = true;
                 }
 
-                image.ImageUrl = item.SaveImage(_webHostEnvironment, "assets/images");
+                image.ImageUrl = item.SaveImage(_webHostEnvironment, "assets/images/product");
                 //product.Images = new List<Image>();
                 product.Images.Add(image);
             }
@@ -168,7 +168,8 @@ namespace AllUp2.Areas.AdminArea.Controllers
             _proService.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
-        [HttpPost]
+
+       
         public IActionResult RemoveImage(int? id)
         {
             var image = _proService.FindImage(id);
