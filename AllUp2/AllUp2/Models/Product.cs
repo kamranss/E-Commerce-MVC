@@ -15,6 +15,9 @@
         public int? Rate { get; set; }
         public int? Quantity { get; set; }
         public DateTime? CreationDate { get; set; }
+        public bool? isNewArrival { get; set; }
+        public bool? IsBsetSeller { get; set; }
+        public bool? IsFeatured { get; set; }
         public int? BrandId { get; set; }
         public Brand Brand { get; set; }
         public int? ColorId { get; set; }

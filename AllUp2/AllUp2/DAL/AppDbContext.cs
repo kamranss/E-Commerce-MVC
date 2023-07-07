@@ -33,6 +33,7 @@ namespace AllUp2.DAL
         public DbSet<SocialPlatform> SocialPlatforms { get; set; }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Service> Services { get; set; }
+        public DbSet<Icon> Icons { get; set; }
 
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{

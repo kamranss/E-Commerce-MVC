@@ -4,6 +4,7 @@ using AllUp2.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AllUp2.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230707103622_bioAddress")]
+    partial class bioAddress
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -461,13 +463,7 @@ namespace AllUp2.Migrations
                     b.Property<bool?>("IStock")
                         .HasColumnType("bit");
 
-                    b.Property<bool?>("IsBsetSeller")
-                        .HasColumnType("bit");
-
                     b.Property<bool?>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsFeatured")
                         .HasColumnType("bit");
 
                     b.Property<bool?>("IsSpecial")
@@ -490,9 +486,6 @@ namespace AllUp2.Migrations
 
                     b.Property<int?>("SizeId")
                         .HasColumnType("int");
-
-                    b.Property<bool?>("isNewArrival")
-                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 

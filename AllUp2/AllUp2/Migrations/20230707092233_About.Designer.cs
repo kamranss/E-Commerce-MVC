@@ -4,6 +4,7 @@ using AllUp2.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AllUp2.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230707092233_About")]
+    partial class About
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -173,16 +175,12 @@ namespace AllUp2.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Instagram")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LinkedIn")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LogoUrl")
@@ -190,9 +188,7 @@ namespace AllUp2.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ServiceInterval")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -340,40 +336,6 @@ namespace AllUp2.Migrations
                     b.ToTable("Experts");
                 });
 
-            modelBuilder.Entity("AllUp2.Models.Icon", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
-
-                    b.Property<string>("IconUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool?>("isAddress")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("isBasket")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("isContact")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("isEmail")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("isTime")
-                        .HasColumnType("bit");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Icons");
-                });
-
             modelBuilder.Entity("AllUp2.Models.Image", b =>
                 {
                     b.Property<int>("Id")
@@ -461,13 +423,7 @@ namespace AllUp2.Migrations
                     b.Property<bool?>("IStock")
                         .HasColumnType("bit");
 
-                    b.Property<bool?>("IsBsetSeller")
-                        .HasColumnType("bit");
-
                     b.Property<bool?>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsFeatured")
                         .HasColumnType("bit");
 
                     b.Property<bool?>("IsSpecial")
@@ -490,9 +446,6 @@ namespace AllUp2.Migrations
 
                     b.Property<int?>("SizeId")
                         .HasColumnType("int");
-
-                    b.Property<bool?>("isNewArrival")
-                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 

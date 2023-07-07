@@ -1,4 +1,4 @@
-﻿@model Bio
+﻿@model BioVM
 @inject IBasketService basketservice
 @{
     int basketCount = basketservice.BasketCount();
@@ -73,7 +73,7 @@
                         <div class="header-logo-contact d-flex  ">
                             <div class="desktop-logo">
                                 <a href="index.html">
-                                    <img src="assets/images/logo.png" alt="Logo">
+                                    <img src="~/assets/images/@Model.Bios.FirstOrDefault().LogoUrl" alt="Logo">
                                 </a>
                             </div> <!-- desktop logo -->
                         </div>
@@ -84,7 +84,7 @@
                                 <i class="icon ion-ios-telephone-outline"></i>
                                 <div class="phone media-body">
                                     <p>24/7 Support</p>
-                                    <a href="tel:+48500500500">+48 500 500 500</a>
+                                    <a href="tel:+48500500500">@Model.Bios.FirstOrDefault().PhoneNumber</a>
                                 </div>
                             </div>
                             <div class="header-search media-body">
@@ -371,7 +371,7 @@
                                         <li><a href="index-4.html">Home 04</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="about.html">About</a></li>
+                                <li><a asp-controller="about" asp-action="index">About</a></li>
                                 <li>
                                     <a href="#">Pages <i class="fal fa-chevron-down"></i></a>
                                     <ul class="sub-menu">

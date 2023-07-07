@@ -1,6 +1,71 @@
-﻿@{
+﻿@model BioVM
+@{
     Layout = null;
 }
+
+<div class="brand-area pt-80">
+    <div class="container-fluid custom-container">
+        <div class="row brand-active">
+            @foreach (var item in Model.Brands)
+            {
+                <div class="col-lg-2">
+                    <div class="single-brand">
+                        <a href="#">
+                            <img src="~/assets/images/brand/@item.ImageURL" alt="brand">
+                        </a>
+                    </div> <!-- single brand -->
+                </div>
+            }
+           
+          
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>
+
+<!--====== Brand Part Ends ======-->
+<!--====== Features Banner Part Start ======-->
+
+<section class="features-banner-area pt-80 pb-100">
+    <div class="container-fluid custom-container">
+        <div class="features-banner-wrapper d-flex flex-wrap">
+            @foreach (var item in Model.Services)
+            {
+                <div class="single-features-banner d-flex">
+                    <div class="banner-icon">
+                        <img src="~/assets/images/banner-icon/@item.IconUrl" alt="Icon">
+                    </div>
+                    <div class="banner-content media-body">
+                        <h3 class="banner-title">@item.Name</h3>
+                        <p>@item.Description</p>
+                    </div>
+                </div> <!-- single features banner -->
+            }
+        </div> <!-- features banner wrapper -->
+    </div> <!-- container -->
+</section>
+
+<!--====== Features Banner Part Ends ======-->
+<!--====== Newsletter Part Start ======-->
+
+<section class="newsletter-area pt-100 pb-100 bg_cover" style="background-image: url(assets/images/bg-newletter.jpg)">
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-lg-8">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Subscribe our newsletter</h2>
+                    <p>allup is a powerful eCommerce HTML Template</p>
+
+                    <div class="newsletter-forn">
+                        <form action="#">
+                            <input type="text" placeholder="Your Email address">
+                            <button class="main-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div> <!-- newsletter content -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</section>
 
 <section class="footer-area bg_cover" style="background-image: url(assets/images/bg-footer.jpg)">
     <div class="footer-widget pt-30 pb-70">
@@ -11,10 +76,10 @@
                         <h4 class="footer-title">Contact Details</h4>
 
                         <ul>
-                            <li><i class="fas fa-map-marker-alt"></i> 45 Grand Central Terminal New York,NY 1017 United State USA</li>
-                            <li><i class="fas fa-phone"></i> <a href="tell:123-456-789">+123 456 789</a></li>
-                            <li><i class="fas fa-envelope"></i><a href="mailto://email@yourwebsitename.com">email@yourwebsitename.com</a></li>
-                            <li><i class="far fa-clock"></i> Mon-Sat 9:00pm - 5:00pm Sun:Closed</li>
+                            <li><i class="fas fa-map-marker-alt"></i> @Model.Bios.FirstOrDefault().Address;</li>
+                            <li><i class="fas fa-phone"></i> <a href="">@Model.Bios.FirstOrDefault().PhoneNumber</a></li>
+                            <li><i class="fas fa-envelope"></i><a href="mailto://email@yourwebsitename.com">@Model.Bios.FirstOrDefault().Email</a></li>
+                            <li><i class="far fa-clock"></i> @Model.Bios.FirstOrDefault().ServiceInterval</li>
                         </ul>
                     </div> <!-- footer contact -->
                 </div>
