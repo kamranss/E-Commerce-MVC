@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using AllUp2.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace AllUp2.ViewModels.AdminVM.Slider
 {
@@ -7,7 +8,7 @@ namespace AllUp2.ViewModels.AdminVM.Slider
         [Required]
         public IFormFile[] Photo { get; set; }  // it means the files will be taken as assive and we can create multiple files at the same time
         public int Id { get; set; }
-
+        public Image ExistingImage { get; set; }
         public string? Title { get; set; }
         public string? Name { get; set; }
         public string? Suggestion { get; set; }

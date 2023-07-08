@@ -8,5 +8,6 @@ namespace AllUp2.Models
         public bool IsActive { get; set; }
         public string? OTP { get; set; }
         public string? ConnectionId { get; set; }
+        public DateTime CreationDate { get; set; }
     }
 }
