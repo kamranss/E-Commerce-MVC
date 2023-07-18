@@ -1,0 +1,134 @@
+﻿@model BlogVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!--====== Breadcrumb Part Start ======-->
+
+<div class="breadcrumb-area">
+    <div class="container-fluid custom-container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li class="breadcrumb-item active">Blog</li>
+            </ol>
+        </nav>
+    </div> <!-- container -->
+</div>
+
+<!--====== Breadcrumb Part Ends ======-->
+<!--====== Blog Part Start ======-->
+
+<section class="blog-page pt-20">
+    <div class="container-fluid custom-container">
+        <div class="row flex-lg-row-reverse justify-content-end">
+            <div class="col-lg-9">
+                <div class="blog-posts">
+                    <div class="row">
+                        @await Component.InvokeAsync("Blog", new { viewName = "Blog" })
+                    </div>
+                </div> <!-- blog posts -->
+
+                <ul class="pagination justify-content-center mt-30">
+                    <li><a href="#"><i class="fal fa-chevron-left"></i></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#"><i class="fal fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="blog-sidebar">
+                    <div class="sidebar-widget mt-30">
+                        <h4 class="sidebar-title">Search</h4>
+                        <div class="blog-sidebar-search">
+                            <form class="widget-search-form">
+                                <input id="input-blog-search" placeholder="Search keyword" type="text" class="search-field">
+                                <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+                            </form>
+                            <ul id="blogSearchList" style="background-color:white; color:black; z-index:100;"></ul>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget mt-30">
+                        <h4 class="sidebar-title">Categories</h4>
+                        <div class="blog-sidebar-categories">
+                            <ul class="categories-list">
+                                @foreach (var cate in Model.Categories)
+                                {
+                                    @if (cate.Blogs.Count() > 0)
+                                    {
+                                        <li><a href="blog-grid-left-sidebar.html">@cate.Name (@cate.Blogs.Count())</a></li>
+                                    }
+                                }
+                            </ul>
+                        </div>
+                    </div> <!-- sidebar widget -->
+
+                    <div class="sidebar-widget mt-30">
+                        <h4 class="sidebar-title">Resent Post</h4>
+                        <div class="blog-sidebar-post">
+                            @foreach (var blog in Model.Blogs)
+                            {
+                                @if (blog.IsVideo)
+                                {
+
+                                }
+                                else
+                                {
+                                    <div class="single-mini-post d-flex">
+                                        <div class="post-thumb">
+                                            <a href="blog-single-left-sidebar.html"><img src="~/assets/images/@blog.ImageUrl" alt="blog"></a>
+                                        </div>
+                                        <div class="post-content media-body">
+                                            <h5 class="post-title"><a href="blog-single-left-sidebar.html">@blog.Title</a></h5>
+                                            <span class="date">@blog.CreatedTime.ToString("dd.mm.yyyy")</span>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div> <!-- sidebar widget -->
+
+                    <div class="sidebar-widget mt-30">
+                        <h4 class="sidebar-title">Popular Tags</h4>
+                        <div class="blog-sidebar-tags">
+                            <ul class="tag-list">
+                                @foreach (var tag in Model.Tags)
+                                {
+                                    <li><a href="#">@tag.Name</a></li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div> <!-- blog sidebar -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</section>
+
+<!--====== Blog Part Ends ======-->
+<!--====== Brand Part Start ======-->
+
+<div class="brand-area pt-80">
+    <div class="container-fluid custom-container">
+        <div class="row brand-active">
+            @await Component.InvokeAsync("BBrand");
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>
+
+<!--====== Brand Part Ends ======-->
+<!--====== Features Banner Part Start ======-->
+
+<section class="features-banner-area pt-80 pb-100">
+    <div class="container-fluid custom-container">
+        <div class="features-banner-wrapper d-flex flex-wrap">
+            @await Component.InvokeAsync("BBanner")
+        </div> <!-- features banner wrapper -->
+    </div> <!-- container -->
+</section>
+
+<!--====== Features Banner Part Ends ======-->

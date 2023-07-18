@@ -1,4 +1,4 @@
-﻿namespace AllUp2.Models
+﻿ namespace AllUp2.Models
 {
     public class Composition
     {

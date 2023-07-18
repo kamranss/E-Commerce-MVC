@@ -96,6 +96,7 @@ namespace AllUp2.Areas.AdminArea.Services.ProductS
             {
                 var query = _appDbContext.Products.AsQueryable();
                 var product = query
+                .Where(p => p.IsDeleted==false)
                 .Include(p => p.Images)
                 .Include(p => p.Category)
                 .ToList();
@@ -108,6 +109,7 @@ namespace AllUp2.Areas.AdminArea.Services.ProductS
 
                 int newlycachedpageCount = PageCount.PageCountt(newlycachedProduct.Count(), take);
                 cachedProduct = newlycachedProduct
+                .Where(p => p.IsDeleted == false)
                 .Skip((page - 1) * take)
                 .Take(take)
                 .ToList();
@@ -119,6 +121,7 @@ namespace AllUp2.Areas.AdminArea.Services.ProductS
 
             int pageCount = PageCount.PageCountt(cachedProduct.Count(), take);
             var existProduct = cachedProduct
+                .Where(p => p.IsDeleted == false)
                 .Skip((page - 1) * take)
                 .Take(take)
                 .ToList();

@@ -34,6 +34,9 @@ namespace AllUp2.DAL
         public DbSet<About> Abouts { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Icon> Icons { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Tag> Tags { get; set; }
+        public DbSet<BlogDetail> BlogDetails { get; set; }
 
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{

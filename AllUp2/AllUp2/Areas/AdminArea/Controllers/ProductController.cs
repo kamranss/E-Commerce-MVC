@@ -117,10 +117,27 @@ namespace AllUp2.Areas.AdminArea.Controllers
             if (!ModelState.IsValid)
             {
                 //ViewBag.Categories = new SelectList(_appDbContext.Categories.ToList(), "Id", "Name");
-                ViewBag.Categories = _proService.GetCategories();
+                var categoriess = _proService.GetCategories();
+
+                List<SelectListItem> selectListItemss = categoriess.Select(c => new SelectListItem
+                {
+                    Value = c.Id.ToString(),
+                    Text = c.Name
+                }).ToList();
+
+                ViewBag.Categories = selectListItemss;
                 return View(productUpdateVM);
             }
 
+            var categories = _proService.GetCategories();
+
+            List<SelectListItem> selectListItems = categories.Select(c => new SelectListItem
+            {
+                Value = c.Id.ToString(),
+                Text = c.Name
+            }).ToList();
+
+            ViewBag.Categories = selectListItems;
             var product = _proService.FindProduct(productUpdateVM.Id);
 
             if (product == null) { return NotFound(); }
@@ -158,7 +175,7 @@ namespace AllUp2.Areas.AdminArea.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        [HttpPost]
+        [HttpGet]
         public IActionResult Delete(int? id)
         {
             if (id == null) return NotFound();

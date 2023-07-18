@@ -1,0 +1,14 @@
+﻿@model List<Banner>
+
+@foreach (var banner in Model)
+{
+    <div class="single-features-banner d-flex">
+        <div class="banner-icon">
+            <img src="~/assets/images/banner-icon/@banner.ImageUrl" alt="Icon">
+        </div>
+        <div class="banner-content media-body">
+            <h3 class="banner-title">@banner.Name</h3>
+            <p>@banner.Description</p>
+        </div>
+    </div> <!-- single features banner -->
+}

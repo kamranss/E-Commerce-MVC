@@ -1,0 +1,35 @@
+﻿@model List<Blog>
+
+@foreach (var blog in Model)
+{
+    <div class="col-md-6">
+        <div class="single-blog-post blog-grid-post mt-30">
+            @if (blog.IsVideo)
+            {
+                <div class="blog-post-media">
+                    <div class="blog-post-audio">
+                        <iframe class="embed-responsive-item" width="500" allow="autoplay" src="@blog.ImageUrl"></iframe>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="blog-post-media">
+                    <div class="blog-image">
+                        <a asp-controller="Blog" asp-action="Detail" asp-route-id="@blog.Id"><img src="assets/images/@blog.ImageUrl" alt="blog"></a>
+                    </div>
+                </div>
+            }
+
+            <div class="blog-post-content">
+                <h4 class="blog-title"><a href="blog-single-left-sidebar.html">@blog.Title</a></h4>
+                <ul class="blog-meta">
+                    <li><a asp-controller="Blog" asp-action="Detail" asp-route-id="@blog.Id"><i class="fas fa-user-circle"></i>@blog.Author</a></li>
+                    <li><a asp-controller="Blog" asp-action="Detail" asp-route-id="@blog.Id"><i class="fas fa-calendar-alt"></i> @blog.CreatedTime.ToString("dd M yyyy")</a></li>
+                </ul>
+                <p>@blog.BlogDetail.ContentHeader.Substring(0,60)</p>
+                <a asp-controller="Blog" asp-action="Detail" asp-route-id="@blog.Id" class="main-btn main-btn-2">Read More</a>
+            </div>
+        </div>
+    </div>
+}

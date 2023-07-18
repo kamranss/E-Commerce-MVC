@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Dk+wy044KJT7OIZwvpny7jT3vgEvfpS/9oIgZ68EANs=",
+  "Hash": "d8QsJKPgFR4GHlA853SAeGP4hk7j2Rw5Wz97oKueRRs=",
   "Source": "AllUp2",
   "BasePath": "_content/AllUp2",
   "Mode": "Default",
@@ -71432,6 +71432,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\c2ddb62e-5116-4589-b01f-a0d1df3904dfJava Controller.PNG"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\assets\\images\\product\\c48f723f-345f-4711-87cd-a7198f063dc7Image 10.jpg",
+      "SourceId": "AllUp2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\",
+      "BasePath": "_content/AllUp2",
+      "RelativePath": "assets/images/product/c48f723f-345f-4711-87cd-a7198f063dc7Image 10.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\product\\c48f723f-345f-4711-87cd-a7198f063dc7Image 10.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\assets\\images\\product\\f65ce7a1-f83c-49cf-9719-830b42128865Image 8.jpg",
+      "SourceId": "AllUp2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\",
+      "BasePath": "_content/AllUp2",
+      "RelativePath": "assets/images/product/f65ce7a1-f83c-49cf-9719-830b42128865Image 8.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\product\\f65ce7a1-f83c-49cf-9719-830b42128865Image 8.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\BackEndFinalProject\\AllUp\\AllUp2\\AllUp2\\wwwroot\\assets\\images\\product\\product-1.jpg",
