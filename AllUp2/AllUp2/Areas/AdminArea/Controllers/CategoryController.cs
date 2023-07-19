@@ -1,7 +1,9 @@
 ﻿using AllUp2.Areas.AdminArea.Services.CategoryS;
 using AllUp2.DAL;
+using AllUp2.Helper.FileExten;
 using AllUp2.Models;
 using AllUp2.ViewModels.AdminVM.Category;
+using AllUp2.ViewModels.AdminVM.Product;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -133,7 +135,28 @@ namespace AllUp2.Areas.AdminArea.Controllers
                 ModelState.AddModelError("Name", "Eyni adli category movcuddur");
                 return View();
             }
+            if (categoryUpdateVM.NewImages != null)
+            {
+                foreach (var newImage in categoryUpdateVM.NewImages)
+                {
+                    if (!newImage.CheckFileType())
+                    {
+                        ModelState.AddModelError("NewImages", "Choose a picture");
+                        return View(categoryUpdateVM);
+                    }
+                    if (newImage.CheckFileLenght(1000))
+                    {
+                        ModelState.AddModelError("NewImages", "Big size");
+                        return View(categoryUpdateVM);
+                    }
 
+                    //Image image = new();
+                    //image.ImageUrl = newImage.SaveImage(_webHostEnvironment, "img");
+                    //product.Images.Add(image);
+
+                    _categoryService.SaveCategoryImage(newImage, category);
+                }
+            }
             //category.Name = categoryUpdateVM.Name;
             //category.Description = categoryUpdateVM.Description;
             _categoryService.MapUpdateCategory(category, categoryUpdateVM);

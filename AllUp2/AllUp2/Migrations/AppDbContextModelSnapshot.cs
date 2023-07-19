@@ -478,10 +478,16 @@ namespace AllUp2.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool?>("IsBannerImage")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.Property<bool>("IsMain")
@@ -494,6 +500,8 @@ namespace AllUp2.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
 
                     b.HasIndex("ProductId");
 
@@ -923,9 +931,15 @@ namespace AllUp2.Migrations
 
             modelBuilder.Entity("AllUp2.Models.Image", b =>
                 {
+                    b.HasOne("AllUp2.Models.Category", "Category")
+                        .WithMany("Images")
+                        .HasForeignKey("CategoryId");
+
                     b.HasOne("AllUp2.Models.Product", "Product")
                         .WithMany("Images")
                         .HasForeignKey("ProductId");
+
+                    b.Navigation("Category");
 
                     b.Navigation("Product");
                 });
@@ -1053,6 +1067,8 @@ namespace AllUp2.Migrations
             modelBuilder.Entity("AllUp2.Models.Category", b =>
                 {
                     b.Navigation("Blogs");
+
+                    b.Navigation("Images");
 
                     b.Navigation("Products");
 

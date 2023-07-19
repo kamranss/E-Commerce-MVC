@@ -1,6 +1,8 @@
 ﻿using AllUp2.DAL;
+using AllUp2.Helper.FileExten;
 using AllUp2.Models;
 using AllUp2.ViewModels.AdminVM.Category;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 
@@ -10,11 +12,13 @@ namespace AllUp2.Areas.AdminArea.Services.CategoryS
     {
         private IMemoryCache _memoryCach;
         private readonly AppDbContext _appDbContext;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public CategoryService(IMemoryCache memoryCach, AppDbContext appDbContext)
+        public CategoryService(IMemoryCache memoryCach, AppDbContext appDbContext, IWebHostEnvironment webHostEnvironment)
         {
             _memoryCach = memoryCach;
             _appDbContext = appDbContext;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         public void AddCategoriesToCache(List<Category> category)
@@ -153,5 +157,12 @@ namespace AllUp2.Areas.AdminArea.Services.CategoryS
             int rusult = _appDbContext.SaveChanges(true);
             return rusult;
         } // done saving changes and getting result for validation
+
+        public void SaveCategoryImage(IFormFile newImage, Category category)
+        {
+            Image image = new();
+            image.ImageUrl = newImage.SaveImage(_webHostEnvironment, "img");
+            category.Images.Add(image);
+        }
     }
 }

@@ -1,5 +1,7 @@
-﻿using AllUp2.Models;
+﻿using AllUp2.Helper.FileExten;
+using AllUp2.Models;
 using AllUp2.ViewModels.AdminVM.Category;
+using Microsoft.AspNetCore.Hosting;
 
 namespace AllUp2.Areas.AdminArea.Services.CategoryS
 {
@@ -29,5 +31,7 @@ namespace AllUp2.Areas.AdminArea.Services.CategoryS
         public void AddCategoryToList(List<Category> categoriesList, Category category);
         public Category UpdateCategory(int id);
 
+        public void SaveCategoryImage(IFormFile newImage, Category category);
+      
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using AllUp2.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace AllUp2.ViewModels.AdminVM.Category
 {
@@ -10,5 +11,13 @@ namespace AllUp2.ViewModels.AdminVM.Category
         [Required(ErrorMessage = "bosh qoyma")]
         [MaxLength(150, ErrorMessage = "50 den kicik ola bilmez")]
         public string Description { get; set; }
+
+        public List<Image>? ExistingImages { get; set; }
+        public List<IFormFile>? NewImages { get; set; }
+
+        public CategoryUpdateVM()
+        {
+            ExistingImages = new List<Image>();
+        }
     }
 }
