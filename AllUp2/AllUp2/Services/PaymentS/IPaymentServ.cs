@@ -1,6 +1,7 @@
 ﻿namespace AllUp2.Services.PaymentS
 {
-    public class IPaymentServ
+    public interface IPaymentServ
     {
+        public async Task<PaymentIntent> CreatePaymentIntent(decimal amount, string currency)
     }
 }
